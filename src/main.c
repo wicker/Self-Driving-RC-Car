@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
   switch(filter_type) {
     case 0:
       printf("Using linear kalman filter. T is %d.\n", T);
+      use_kf(T);
       break;
     case 1:
       printf("Using extended kalman filter. Not written yet. Exiting.\n");
@@ -33,15 +34,13 @@ int main(int argc, char *argv[]) {
       break;
   }
 
-  int a[2][2] = {1,2,3,4};
+  // int a[2][2] = {1,2,3,4};
+  // int b[2][2] = {1,2,3,4};
 
-  printf("a: %d %d\n   %d %d\n\n",a[0][0],a[0][1],a[1][0],a[1][1]);
-
-  transpose(a);
-
-  printf("a: %d %d\n   %d %d\n\n",a[0][0],a[0][1],a[1][0],a[1][1]);
+  // matrix_testing(a,b);
 
   return 0;
+
 }
 
 int instructions() {
