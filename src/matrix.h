@@ -6,6 +6,8 @@
 
 void matrix_testing(int (*)[2], int (*)[2]);
 
+void inverse(int (*)[2]);
+
 void transpose(int (*)[2]);
 
 void multiply(int (*)[2], int (*)[2]);

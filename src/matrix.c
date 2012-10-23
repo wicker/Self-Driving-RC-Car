@@ -22,7 +22,7 @@ void matrix_testing(int a[2][2], int b[2][2]) {
 
 }
 
-void transpose(int a[0][2]) {
+void transpose(int a[][2]) {
   int row = 0;
   int col = 0;
   int new_row = 0;
@@ -48,6 +48,18 @@ void transpose(int a[0][2]) {
           a[row][col] = temp[row][col];
       }
   }
+}
+
+void inverse(int a[][2]) {
+  float d1 = a[0][0];
+  float d2 = a[0][1];
+  float d3 = a[1][0];
+  float d4 = a[1][1];
+  float invert[2][2] = {d4,-d2,-d3,d1};
+
+  float temp = 1 / (d1*d4 - d2*d3);
+
+  a = temp * invert;
 }
 
 void multiply(int a(*)[2], int b(*)[2], int temp[2][2], int row, int col) {
