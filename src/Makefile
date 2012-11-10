@@ -1,9 +1,7 @@
-OUT=main
+all: 
+	gcc -lm main.c -o main
 
-CFLAGS=-g -c -Wall 
-
-all: main.c -o $(OUT)
-
-clean: rm -rf $(OUT)
+clean: 
+	rm -rf main
 
 

@@ -7,6 +7,7 @@
 
 #include "stdio.h"
 #include "math.h"
+#include "../matrix/matrix.h"
 
 void use_kf(float T);
 
