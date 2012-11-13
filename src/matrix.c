@@ -3,12 +3,39 @@
  */
 
 #include "math.h"
+#include "matrix.h"
 
-void matrix_testing(int a[2][2], int b[2][2]) {
+void print_matrix_2x2(matrix_2x2 temp) {
+
+  printf("wut");
+
+  int i;
+  int j;
+  for (i; i < temp.m; i++)
+  {
+    for (j; j < temp.n; j++)
+         printf("%f",temp.data[i][j]);
+    printf("\n");
+  } 
+}
+
+// old set_matrix_2x2
+/*matrix set_matrix_2x2(matrix temp) {
+
+
+  temp.m = 2;
+  temp.n = 2;
+  float adata[2][2] = {0,0,0,0};
+  temp.data = adata;
+  return temp;
+}*/
+
+
+/*void matrix_testing(matrix,matrix) {
 
   printf("Testing transpose, multiply, add, and subtract of a matrix.\n");
 
-  printf("a: %d %d\n   %d %d\n\n",a[0][0],a[0][1],a[1][0],a[1][1]);
+  print_matrix(A);
 
 //  transpose(a);
 
@@ -22,7 +49,7 @@ void matrix_testing(int a[2][2], int b[2][2]) {
 
 }
 
-void transpose(int a[][2]) {
+void transpose() {
   int row = 0;
   int col = 0;
   int new_row = 0;
@@ -50,7 +77,7 @@ void transpose(int a[][2]) {
   }
 }
 
-void inverse(int a[][2]) {
+void inverse() {
   float d1 = a[0][0];
   float d2 = a[0][1];
   float d3 = a[1][0];
@@ -62,7 +89,7 @@ void inverse(int a[][2]) {
   a = temp * invert;
 }
 
-void multiply(int a(*)[2], int b(*)[2], int temp[2][2], int row, int col) {
+void multiply() {
 
   // multiply
   for (row = 0; row < 2; row++)
@@ -83,11 +110,11 @@ void multiply(int a(*)[2], int b(*)[2], int temp[2][2], int row, int col) {
   }
 }
 
-void subtract(int a(*)[2], int b(*)[2]) {
+void subtract() {
   
 }
 
-void add(int a(*)[2], int b(*)[2]) {
+void add() {
   
 }
-
+*/

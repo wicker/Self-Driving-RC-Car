@@ -5,83 +5,137 @@
  * in June 2001 issue of Embedded Systems Programming.
  */
 
+#include "math.h"
 #include "use_kf.h"
 
-void use_kf(float T, float duration) {
+/* Use regular Kalman Filter */
 
-  // 'T' is time step in seconds
-  // 'duration' in seconds 
+void use_kf(float T, int duration) {
 
-  // This set up for variables works for a 2 state, 1 input, 1 output system
+/* Step 1: Customize the Kalman Filter for your system
+ * 'T' is time step and duration is total number of time steps.
+ * Currently set up for 2 state, 1 input, 1 output system
+ */
 
   int n = 2; // states
   int m = 1; // inputs
   int r = 1; // outputs
-  
-  printf("Hi. T is %f.\n",T);
 
-  float measure_noise = 10;  // feet
-  float process_noise = 0.2; // feet/sec^2
+  int time;  // actual time displacement
 
-  struct mat_2x2 A;     // [n][n]
-  struct mat_2x1 B;     // [n][m]
-  struct mat_1x1 C;     // [r][n]
- 
-  struct mat_2x1 x;     // [n][m]
-  struct mat_2x2 Sw;    // [n][n]
-  
-  struct mat_2x2 P;     // [n][n]
-  struct mat_1x1 u;     // [m][1]
-  struct mat_1x1 y;     // [r][1]
+  float position_noise = 10;  // feet
+  float accel_noise = 0.2; // feet/sec^2
 
-  struct mat_1x1 x_hat; // [n][1]
+  float A[n][n]; // transition matrix 
+  float B[n][m]; // input matrix
+  float C[r][n]; // measurement matrix
 
-  A.data = {1,T,0,1}; // transition matrix
-  B.data = {sqrt(T)/2,T};
-  C.data = {1,0};
+  float A_T[n][n]; // transpose of A
+  float C_T[n][r]; // transpose of C
 
-  x.data = {0,0};    // initial state estimate
-  Sw.data = {(1/4)*T^4,(1/2)*T^3,(1/2)*T^3,T^2} // process noise
-  Sw = accel_noise^2 * Sw;
-  float Sz = meas_noise^2;
-  P.data = Sw;       // initial uncertainty
-  u.data = {1};  // external motion
-  y.data = {matrix_multiply(C * x) + meas_noise};
+  float xhat[n][m]; // state estimate containing position and velocity
+  float x[n][m];    // state containing position and velocity
 
-  x_hat.data = {0,0};
+  float u = 1; // input: commanded acceleration in ft/sec^2
+  float y;     // measured output
 
-  // still not sure which these are, with difference in notation
-  /*
-  float F.data[n][n];  // next state transition matrix
-  float H.data[1][2];  // measurement function
-  float R = 1;    // measurement uncertainty (noise)
-  float I.data[2][2];  // identity
-  float Z = 1;    // actual input measurement
-  float K.data[2][1];  // Kalman gain */
+  float Sz = pow(position_noise,2); // measurement error covariance
+  float Sw[n][n];                   // process noise covariance
+  Sw[0][0] = pow(accel_noise,2) * pow(T,4)/4;
+  Sw[0][1] = pow(accel_noise,2) * pow(T,3)/2;
+  Sw[1][0] = pow(accel_noise,2) * pow(T,3)/2;
+  Sw[1][1] = pow(accel_noise,2) * pow(T,2);
 
-  for (T = 0; T < duration; T++) {
-    predict(float x, float F, float u, float P);
-    measure();
+  float s;                 // covariance of the innovation vector
+  float inn_var;               // innovation variable
+  float w_k[n][m];         // process noise
+  float z_k;               // measurement noise
+
+  float P[n][n];           // initial estimate covariance
+  P[0][0] = Sw[0][0];  
+  P[0][1] = Sw[0][1];
+  P[1][0] = Sw[1][0];
+  P[1][1] = Sw[1][1];
+
+  float pos[duration];     // true position array
+  float poshat[duration];  // estimated position array
+  float posmeas[duration]; // measured position array
+  float vel[duration];     // true velocity array
+  float velhat[duration];  // estimated velocity array
+
+  float state_temp[2][1];  // temporary array for matrix math
+  float input_temp[2][1];  // temporary array for matrix math
+  int row = 0;
+  int col = 0;
+  int new_row = 0;
+  int new_col = 0;
+
+  printf("Hey, this works.\n");
+
+  for (time = 0; time < duration; time++)
+  {
+    printf("time: %d, duration: %d\n",time,duration);
+
+    /* Simulate the process noise */
+
+    w_k[0][0] = accel_noise * pow(T,2)/2 * rand();
+    w_k[0][1] = accel_noise * T * rand();
+
+    state_temp[0][0] = A[0][0] * x[0][0] + A[0][1] * x[1][0];
+    state_temp[1][0] = A[1][0] * x[0][0] + A[1][1] * x[1][0];
+
+    input_temp[0][0] = B[0][0] * u;
+    input_temp[1][0] = B[1][0] * u;
+
+    x[0][0] = state_temp[0][0] + input_temp[0][0] + w_k[0][0];
+    x[1][0] = state_temp[1][0] + input_temp[1][0] + w_k[1][0];
+
+    /* Simulate the measurement noise */
+
+    z_k = position_noise * rand();
+    printf("z_k = %f\n",z_k);  // test, delete me
+
+    y = (C[0][0] * x[0][0]) + (C[0][1] * x[1][0]) + z_k;
+
+    /* Extrapolate most recent state estimate to the present time */
+    /* xhat = A * xhat + B * u */
+
+    state_temp[0][0] = A[0][0] * xhat[0][0] + A[0][1] * xhat[1][0];
+    state_temp[1][0] = A[1][0] * xhat[0][0] + A[1][1] * xhat[1][0];
+
+    input_temp[0][0] = B[0][0] * u;
+    input_temp[1][0] = B[1][0] * u;
+
+    xhat[0][0] = state_temp[0][0] + input_temp[0][0];
+
+    /* Form innovation vector and compute its covariance */
+
+    printf("%f %f\n",C[0][0],C[0][1]);
+
+    C_T[0][0] = C[0][0];
+    C_T[1][0] = C[0][1];
+
+    printf("%f %f\n",C_T[0][0],C[1][0]);
+
+//    Inn = y - C * xhat;
+//    s = C * P * transp(C) + Sz;
+    
+    /* Calculate the Kalman Gain matrix */
+//    K = A * P * transp(C) * inv(s);
+
+    /* Update state estimate */
+//    xhat = xhat + K * Inn;
+
+    /* Compute covariance of the estimation error */
+//    P = A * P * transp(A) - A * P * transp(C) * inv(s) * C * P * transp(A) + Sw;
+
+    /* Add variables to the tracking arrays for later analysis */
+//    pos[time] = x[0][0];
+//    posmeas[time] = y;
+//    poshat[time] = xhat[0][0];
+//    vel[time] = x[1][0];
+//    velhat[time] = xhat[1][0];
   }
 
-}
-void predict() {
-
-  //  x = F * x + u;
-
-
-  //  P = F * P * tranpose(F);
-
-
-}
-
-void measure() {
-//  y = Z - H*x;
-
-//  S = H*P*transpose(H) + R;
-//  K = P*transpose(H)*inverse(S);
-
-//  x = x + K*y;
-//  P = (I - K*H) * P;
 }
 

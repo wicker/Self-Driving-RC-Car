@@ -4,6 +4,7 @@
 
 #include "stdio.h"
 #include "math.h"
+#include "matrix.h"
 
 #define ARGS 3
 
@@ -33,11 +34,6 @@ int main(int argc, char *argv[]) {
       printf("Failure.\n");
       break;
   }
-
-  // int a[2][2] = {1,2,3,4};
-  // int b[2][2] = {1,2,3,4};
-
-  // matrix_testing(a,b);
 
   return 0;
 

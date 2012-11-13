@@ -7,11 +7,7 @@
 
 #include "stdio.h"
 #include "math.h"
-#include "../matrix/matrix.h"
+#include "../matrix.h"
 
-void use_kf(float T);
-
-void predict();
-
-void measure();
+void use_kf(float T, int duration);
 

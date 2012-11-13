@@ -4,42 +4,31 @@
  * Matrix math functions for 2x2 matrices needed for Kalman filter.
  */
 
-/* Global Structs for Kalman Filter */
+#ifndef MATRIX_H
+#define MATRIX_H
 
-struct matrix_2x2 {
-  int m = 2;
-  int n = 2;
-  float data[m][n];
-}
+/* Typedef for matrix struct */
 
-struct matrix_2x1 {
-  int m = 2;
-  int n = 1;
-  float data[m][n];
-}
-
-struct matrix_1x2 {
-  int m = 1;
-  int n = 2;
-  float data[m][n];
-}
-
-struct matrix_1x1 {
-  int m = 1;
-  int n = 1;
-  float data[m][n];
-}
+typedef struct {
+  int m;
+  int n;
+  float data[2][2];
+} matrix_2x2;
 
 /* Functions */
 
-void matrix_testing(int (*)[2], int (*)[2]);
+void matrix_testing();
 
-void inverse(int (*)[2]);
+void inverse();
 
-void transpose(int (*)[2]);
+void transpose();
 
-void multiply(int (*)[2], int (*)[2]);
+void multiply();
 
-void subtract(int (*)[2], int (*)[2]);
+void subtract();
 
-void add(int (*)[2], int (*)[2]); 
+void add(); 
+
+void print_matrix_2x2(matrix_2x2);
+
+#endif
