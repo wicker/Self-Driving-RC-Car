@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "Compiling."
-gcc kalman.c -Wall -L/usr/local/lib -o kalman.o -lgsl -lgslcblas -lm
-echo "Running."
-./kalman.o
