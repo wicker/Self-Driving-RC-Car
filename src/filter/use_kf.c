@@ -31,7 +31,7 @@ void use_kf(float T, int duration) {
   float C[r][n]; // measurement matrix
 
   float A_T[n][n]; // transpose of A
-  float C_T[n][r]; // transpose of C
+  float C_T[2][1]; // transpose of C
 
   float xhat[n][m]; // state estimate containing position and velocity
   float x[n][m];    // state containing position and velocity
@@ -46,10 +46,16 @@ void use_kf(float T, int duration) {
   Sw[1][0] = pow(accel_noise,2) * pow(T,3)/2;
   Sw[1][1] = pow(accel_noise,2) * pow(T,2);
 
+  float P_temp1[2][2];     // matrix: A * P * A_T
+  float P_temp2[2][2];     // matrix: A * P * P_temp3 * P * A_T
+  float P_temp3;           // scalar: C_T * 1/s * C
+
   float s;                 // covariance of the innovation vector
   float inn_var;               // innovation variable
   float w_k[n][m];         // process noise
   float z_k;               // measurement noise
+
+  float K[2][1];           // Kalman Gain matrix
 
   float P[n][n];           // initial estimate covariance
   P[0][0] = Sw[0][0];  
@@ -65,6 +71,7 @@ void use_kf(float T, int duration) {
 
   float state_temp[2][1];  // temporary array for matrix math
   float input_temp[2][1];  // temporary array for matrix math
+  float gain_temp[2][2];
   int row = 0;
   int col = 0;
   int new_row = 0;
@@ -109,32 +116,100 @@ void use_kf(float T, int duration) {
     xhat[0][0] = state_temp[0][0] + input_temp[0][0];
 
     /* Form innovation vector and compute its covariance */
+    /* Inn = y - C * xhat; */
+    /* s = C * P * transp(C) + Sz; */
 
-    printf("%f %f\n",C[0][0],C[0][1]);
+    inn_var = y - C[0][0] * xhat[0][0] + C[0][1] * xhat[1][0];
+
+    C_T[0][0] = 0;
+    C_T[1][0] = 0;
+
+    C[0][0] = 1;
+    C[0][1] = 2;
+
+    printf("C:   %f %f\n",C[0][0],C[0][1]);
 
     C_T[0][0] = C[0][0];
     C_T[1][0] = C[0][1];
 
-    printf("%f %f\n",C_T[0][0],C[1][0]);
+    printf("C_T: %f\n     %f\n",C_T[0][0],C_T[1][0]);
 
-//    Inn = y - C * xhat;
-//    s = C * P * transp(C) + Sz;
-    
+    s = (C[0][0]*P[0][0] + C[1][0]*P[1][0]) * C_T[0][0];
+    s = s + (C[0][0]*P[0][1] + C[1][0]*P[1][1]) * C_T[1][0];
+    s = s + Sz;
+
+    printf("s:   %f\n",s); 
+
     /* Calculate the Kalman Gain matrix */
-//    K = A * P * transp(C) * inv(s);
+    /* K = A * P * transp(C) * inv(s);  */
 
-    /* Update state estimate */
-//    xhat = xhat + K * Inn;
+    gain_temp[0][0] = A[0][0]*P[0][0] + A[0][1]*P[1][0];
+    gain_temp[0][1] = A[0][0]*P[0][1] + A[0][0]*P[0][1];
+    gain_temp[1][0] = A[1][0]*P[0][0] + A[1][1]*P[1][0]; 
+    gain_temp[1][1] = A[1][0]*P[0][1] + A[1][1]*P[1][1]; 
 
-    /* Compute covariance of the estimation error */
-//    P = A * P * transp(A) - A * P * transp(C) * inv(s) * C * P * transp(A) + Sw;
+    K[0][0] = (1/s) * gain_temp[0][0]*C_T[0][0] + gain_temp[0][1]*C_T[1][0];
+    K[1][0] = (1/s) * gain_temp[1][0]*C_T[0][0] + gain_temp[1][1]*C_T[1][0];
+
+    printf("K:   %f\n     %f\n",K[0][0],K[1][0]);
+
+    /* Update state estimate  */
+    /* xhat = xhat + K * Inn  */
+
+    xhat[0][0] = xhat[0][0] + K[0][0] * inn_var;
+    xhat[1][0] = xhat[1][0] + K[1][0] * inn_var;
+
+    /* Compute covariance of the estimation error                     */
+    /* P = A*P*transp(A) - A*P*transp(C)*inv(s)*C*P*transp(A) + Sw;   */
+    /* float P_temp1[2][2];     // matrix: A * P * A_T                */     
+    /* float P_temp2[2][2];     // matrix: A * P * P_temp3 * P * A_T  */
+    /* float P_temp3;           // scalar: C_T * 1/s * C              */
+    
+    A_T[0][0] = A[0][0]; // transpose A
+    A_T[0][1] = A[1][0];
+    A_T[1][0] = A[0][1];
+    A_T[1][1] = A[1][1];
+
+    P_temp1[0][0] = A[0][0]*P[0][0] + A[0][1]*P[1][0];
+    P_temp1[0][1] = A[0][0]*P[0][1] + A[0][0]*P[0][1];
+    P_temp1[1][0] = A[1][0]*P[0][0] + A[1][1]*P[1][0]; 
+    P_temp1[1][1] = A[1][0]*P[0][1] + A[1][1]*P[1][1]; 
+
+    P_temp1[0][0] = P_temp1[0][0]*A_T[0][0] + P_temp1[0][1]*A_T[1][0];
+    P_temp1[0][1] = P_temp1[0][0]*A_T[0][1] + P_temp1[0][0]*A_T[0][1];
+    P_temp1[1][0] = P_temp1[1][0]*A_T[0][0] + P_temp1[1][1]*A_T[1][0]; 
+    P_temp1[1][1] = P_temp1[1][0]*A_T[0][1] + P_temp1[1][1]*A_T[1][1]; 
+
+    P_temp3 = C_T[0][0] * C[0][0] + C_T[1][0] * C[0][1];
+    P_temp3 = P_temp3 * (1/s);
+
+    P_temp2[0][0] = (A[0][0]*P[0][0] + A[0][1]*P[1][0]) * P_temp3;
+    P_temp2[0][1] = (A[0][0]*P[0][1] + A[0][0]*P[0][1]) * P_temp3;
+    P_temp2[1][0] = (A[1][0]*P[0][0] + A[1][1]*P[1][0]) * P_temp3; 
+    P_temp2[1][1] = (A[1][0]*P[0][1] + A[1][1]*P[1][1]) * P_temp3; 
+
+    P_temp2[0][0] = P_temp2[0][0]*P[0][0] + P_temp2[0][1]*P[1][0];
+    P_temp2[0][1] = P_temp2[0][0]*P[0][1] + P_temp2[0][0]*P[0][1];
+    P_temp2[1][0] = P_temp2[1][0]*P[0][0] + P_temp2[1][1]*P[1][0]; 
+    P_temp2[1][1] = P_temp2[1][0]*P[0][1] + P_temp2[1][1]*P[1][1]; 
+
+    P_temp2[0][0] = P_temp2[0][0]*A_T[0][0] + P_temp2[0][1]*A_T[1][0];
+    P_temp2[0][1] = P_temp2[0][0]*A_T[0][1] + P_temp2[0][0]*A_T[0][1];
+    P_temp2[1][0] = P_temp2[1][0]*A_T[0][0] + P_temp2[1][1]*A_T[1][0]; 
+    P_temp2[1][1] = P_temp2[1][0]*A_T[0][1] + P_temp2[1][1]*A_T[1][1]; 
+
+    P[0][0] = P_temp1[0][0] - P_temp2[0][0] + Sw[0][0];
+    P[0][1] = P_temp1[0][1] - P_temp2[0][1] + Sw[0][1];
+    P[1][0] = P_temp1[1][0] - P_temp2[1][0] + Sw[1][0];
+    P[1][1] = P_temp1[1][1] - P_temp2[1][1] + Sw[1][1];
 
     /* Add variables to the tracking arrays for later analysis */
-//    pos[time] = x[0][0];
-//    posmeas[time] = y;
-//    poshat[time] = xhat[0][0];
-//    vel[time] = x[1][0];
-//    velhat[time] = xhat[1][0];
+
+    pos[time] = x[0][0];
+    posmeas[time] = y;
+    poshat[time] = xhat[0][0];
+    vel[time] = x[1][0];
+    velhat[time] = xhat[1][0];
   }
 
 }
