@@ -6,7 +6,7 @@
 #include "math.h"
 #include "matrix.h"
 
-#define ARGS 3
+#define ARGS 4
 
 int instructions();
 
@@ -17,12 +17,13 @@ int main(int argc, char *argv[]) {
   }
 
   int filter_type = atoi(argv[1]);
-  int T = atoi(argv[2]);
+  float T = atoi(argv[2]);
+  int duration = atoi(argv[3]);
 
   switch(filter_type) {
     case 0:
-      printf("Using linear kalman filter. T is %d.\n", T);
-      use_kf(T);
+      printf("Using linear kalman filter. T is %f and duration is %d.\n", T,duration);
+      use_kf(T, duration);
       break;
     case 1:
       printf("Using extended kalman filter. Not written yet. Exiting.\n");
@@ -42,9 +43,10 @@ int main(int argc, char *argv[]) {
 int instructions() {
   printf("\n \
   Usage: ./main <type> <T>\n \
-  This program accepts two integer arguments separated by a space.\n \
+  This program accepts three integer arguments separated by a space.\n \
   Filter Type: 0 (Kalman Filter), 1 (Extended KF), 2 (Unscented KF)\n \
-  T: integer value of T for the linear Kalman Filter.\n\n"); 
+  T: integer value of T for the linear Kalman Filter.\n \
+  duration: total number of time steps over which to apply the filter.\n\n"); 
 }
   
 
