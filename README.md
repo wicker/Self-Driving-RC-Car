@@ -9,12 +9,10 @@ IMX (Imex) Firefox 1/10 scale RC car contains one RC550 brushed hobby DC motor a
 
 **Software**
 
-Simple Arduino sketch to drive the motor in forward and reverse while turning the servo to steer the vehicle. 
+Simple Arduino sketch to drive the motor in forward and reverse while turning the servo to steer the vehicle. Libraries used:
 
-Libraries used:
-
-- "mem's ServoTimer2":http://forum.arduino.cc/index.php/topic,21975.0.html
-- "Pololu's VNH5019 Motor Driver Shield":https://github.com/pololu/dual-vnh5019-motor-shield
+- [mem's ServoTimer2](http://forum.arduino.cc/index.php/topic,21975.0.html)
+- [Pololu's VNH5019 Motor Driver Shield](https://github.com/pololu/dual-vnh5019-motor-shield)
 
 **License**
 
