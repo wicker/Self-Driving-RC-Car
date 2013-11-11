@@ -51,7 +51,7 @@ void use_kf(float T, int duration) {
   float P_temp3;           // scalar: C_T * 1/s * C
 
   float s;                 // covariance of the innovation vector
-  float inn_var;               // innovation variable
+  float inn_var;           // innovation variable
   float w_k[n][m];         // process noise
   float z_k;               // measurement noise
 
@@ -210,6 +210,12 @@ void use_kf(float T, int duration) {
     poshat[time] = xhat[0][0];
     vel[time] = x[1][0];
     velhat[time] = xhat[1][0];
+  }
+
+  printf("   pos         posmeas               poshat\n");
+  for (time = 0; time < duration; time++)
+  {
+      printf("%d  %f  %f     %f\n",time,pos[time],posmeas[time],poshat[time]);
   }
 
 }

@@ -23,6 +23,11 @@ int main(int argc, char *argv[]) {
   switch(filter_type) {
     case 0:
       printf("Using linear kalman filter. T is %f and duration is %d.\n", T,duration);
+      int n = 4;
+      int m = 3;
+      float a = n%m;
+      printf("a = %f.",a);
+
       use_kf(T, duration);
       break;
     case 1:

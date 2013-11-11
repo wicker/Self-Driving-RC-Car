@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Compiling."
+make
+echo "Running a standard KF with T = 1."
+./main 0 1 10
+
