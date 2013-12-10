@@ -17703,10 +17703,10 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="-152.4" y1="-27.94" x2="0" y2="-27.94" width="0.15" layer="97" style="longdash"/>
 <wire x1="0" y1="-27.94" x2="0" y2="59.69" width="0.15" layer="97" style="longdash"/>
 <wire x1="0" y1="59.69" x2="-152.4" y2="59.69" width="0.15" layer="97" style="longdash"/>
-<wire x1="2.54" y1="48.26" x2="2.54" y2="-22.86" width="0.15" layer="97" style="longdash"/>
+<wire x1="2.54" y1="55.88" x2="2.54" y2="-22.86" width="0.15" layer="97" style="longdash"/>
 <wire x1="2.54" y1="-22.86" x2="50.8" y2="-22.86" width="0.15" layer="97" style="longdash"/>
-<wire x1="50.8" y1="-22.86" x2="50.8" y2="48.26" width="0.15" layer="97" style="longdash"/>
-<wire x1="50.8" y1="48.26" x2="2.54" y2="48.26" width="0.15" layer="97" style="longdash"/>
+<wire x1="50.8" y1="-22.86" x2="50.8" y2="55.88" width="0.15" layer="97" style="longdash"/>
+<wire x1="50.8" y1="55.88" x2="2.54" y2="55.88" width="0.15" layer="97" style="longdash"/>
 <wire x1="-7.62" y1="99.06" x2="-7.62" y2="66.04" width="0.15" layer="97" style="longdash"/>
 <wire x1="-7.62" y1="66.04" x2="46.99" y2="66.04" width="0.15" layer="97" style="longdash"/>
 <wire x1="46.99" y1="66.04" x2="46.99" y2="99.06" width="0.15" layer="97" style="longdash"/>
@@ -17716,6 +17716,12 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="-17.78" y1="60.96" x2="-17.78" y2="104.14" width="0.15" layer="97" style="longdash"/>
 <wire x1="-17.78" y1="104.14" x2="-133.35" y2="104.14" width="0.15" layer="97" style="longdash"/>
 <frame x1="-163.83" y1="-41.91" x2="62.23" y2="116.84" columns="8" rows="5" layer="91"/>
+<text x="-130.81" y="99.06" size="2.1844" layer="97">POWER</text>
+<text x="-149.86" y="54.61" size="2.1844" layer="97">MOTOR DRIVER</text>
+<text x="-5.08" y="90.17" size="2.1844" layer="97">DIRECTION
+SERVO</text>
+<text x="5.08" y="46.99" size="2.1844" layer="97">QUADCOPTER
+ESCs</text>
 </plain>
 <instances>
 <instance part="JP2" gate="G$1" x="35.56" y="81.28" rot="R180"/>
@@ -18177,14 +18183,18 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 </sheet>
 <sheet>
 <plain>
-<text x="153.67" y="261.62" size="1.778" layer="97">MAGNETOMETER</text>
-<text x="73.66" y="261.62" size="1.778" layer="97">ACCEL/GYRO</text>
-<wire x1="15.24" y1="270.51" x2="15.24" y2="209.55" width="0.15" layer="97" style="longdash"/>
-<wire x1="15.24" y1="209.55" x2="219.71" y2="209.55" width="0.15" layer="97" style="longdash"/>
-<wire x1="219.71" y1="209.55" x2="219.71" y2="270.51" width="0.15" layer="97" style="longdash"/>
-<wire x1="219.71" y1="270.51" x2="15.24" y2="270.51" width="0.15" layer="97" style="longdash"/>
+<text x="17.78" y="265.43" size="2.1844" layer="97">ACCEL/GYRO</text>
+<wire x1="15.24" y1="270.51" x2="15.24" y2="208.28" width="0.15" layer="97" style="longdash"/>
+<wire x1="15.24" y1="208.28" x2="120.65" y2="208.28" width="0.15" layer="97" style="longdash"/>
+<wire x1="120.65" y1="208.28" x2="120.65" y2="270.51" width="0.15" layer="97" style="longdash"/>
+<wire x1="120.65" y1="270.51" x2="15.24" y2="270.51" width="0.15" layer="97" style="longdash"/>
 <frame x1="7.62" y1="5.08" x2="396.24" y2="280.67" columns="8" rows="5" layer="97"/>
 <wire x1="289.56" y1="125.73" x2="299.72" y2="125.73" width="0.15" layer="93"/>
+<text x="134.62" y="265.43" size="2.1844" layer="97">MAGNETOMETER</text>
+<wire x1="128.27" y1="208.28" x2="128.27" y2="270.51" width="0.15" layer="97" style="longdash"/>
+<wire x1="128.27" y1="270.51" x2="218.44" y2="270.51" width="0.005" layer="97" style="longdash"/>
+<wire x1="218.44" y1="270.51" x2="218.44" y2="208.28" width="0.005" layer="97" style="longdash"/>
+<wire x1="218.44" y1="208.28" x2="128.27" y2="208.28" width="0.005" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="U$10" gate="G$1" x="246.38" y="114.3"/>
@@ -18902,8 +18912,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <net name="SPI2_CS" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="PB12"/>
-<wire x1="199.39" y1="77.47" x2="193.04" y2="77.47" width="0.15" layer="91"/>
-<label x="193.04" y="77.47" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="199.39" y1="77.47" x2="196.85" y2="77.47" width="0.15" layer="91"/>
+<wire x1="196.85" y1="77.47" x2="191.77" y2="81.28" width="0.15" layer="91"/>
+<label x="191.77" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="!CS"/>
@@ -18914,8 +18925,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <net name="SPI2_SCK" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="PB13"/>
-<wire x1="199.39" y1="74.93" x2="193.04" y2="74.93" width="0.15" layer="91"/>
-<label x="193.04" y="74.93" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="199.39" y1="74.93" x2="196.85" y2="74.93" width="0.15" layer="91"/>
+<wire x1="196.85" y1="74.93" x2="191.77" y2="77.47" width="0.15" layer="91"/>
+<label x="191.77" y="77.47" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="95.25" y1="247.65" x2="99.06" y2="247.65" width="0.15" layer="91"/>
@@ -18926,8 +18938,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <net name="SPI2_MISO" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="PB14"/>
-<wire x1="199.39" y1="72.39" x2="193.04" y2="72.39" width="0.15" layer="91"/>
-<label x="193.04" y="72.39" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="199.39" y1="72.39" x2="196.85" y2="72.39" width="0.15" layer="91"/>
+<wire x1="196.85" y1="72.39" x2="191.77" y2="73.66" width="0.15" layer="91"/>
+<label x="191.77" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="95.25" y1="234.95" x2="99.06" y2="234.95" width="0.15" layer="91"/>
@@ -18938,8 +18951,8 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <net name="SPI2_MOSI" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="PB15"/>
-<wire x1="199.39" y1="69.85" x2="193.04" y2="69.85" width="0.15" layer="91"/>
-<label x="193.04" y="69.85" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="199.39" y1="69.85" x2="191.77" y2="69.85" width="0.15" layer="91"/>
+<label x="191.77" y="69.85" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="95.25" y1="251.46" x2="99.06" y2="251.46" width="0.15" layer="91"/>
@@ -19320,22 +19333,22 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <net name="TX3" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="PB10"/>
-<wire x1="199.39" y1="90.17" x2="187.96" y2="90.17" width="0.15" layer="91"/>
+<wire x1="199.39" y1="90.17" x2="173.99" y2="90.17" width="0.15" layer="91"/>
 <label x="190.5" y="90.17" size="1.778" layer="95"/>
-<wire x1="187.96" y1="90.17" x2="180.34" y2="82.55" width="0.15" layer="91"/>
+<wire x1="173.99" y1="90.17" x2="166.37" y2="82.55" width="0.15" layer="91"/>
 <pinref part="JP13" gate="G$1" pin="3"/>
 <label x="156.21" y="82.55" size="1.778" layer="95"/>
-<wire x1="180.34" y1="82.55" x2="154.94" y2="82.55" width="0.15" layer="91"/>
+<wire x1="166.37" y1="82.55" x2="154.94" y2="82.55" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="RX3" class="0">
 <segment>
 <pinref part="JP13" gate="G$1" pin="2"/>
 <label x="156.21" y="80.01" size="1.778" layer="95"/>
-<wire x1="154.94" y1="80.01" x2="180.34" y2="80.01" width="0.15" layer="91"/>
-<wire x1="180.34" y1="80.01" x2="187.96" y2="87.63" width="0.15" layer="91"/>
+<wire x1="154.94" y1="80.01" x2="166.37" y2="80.01" width="0.15" layer="91"/>
+<wire x1="166.37" y1="80.01" x2="173.99" y2="87.63" width="0.15" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="PB11"/>
-<wire x1="199.39" y1="87.63" x2="187.96" y2="87.63" width="0.15" layer="91"/>
+<wire x1="199.39" y1="87.63" x2="173.99" y2="87.63" width="0.15" layer="91"/>
 <label x="190.5" y="87.63" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -19580,4 +19593,10 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
