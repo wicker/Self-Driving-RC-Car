@@ -17326,76 +17326,76 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <rectangle x1="0.125" y1="-2" x2="0.375" y2="-1.6" layer="21"/>
 <rectangle x1="0.625" y1="-2" x2="0.875" y2="-1.6" layer="21"/>
 <rectangle x1="1.125" y1="-2" x2="1.375" y2="-1.6" layer="21"/>
-<smd name="1" x="-1.975" y="1.25" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="1" x="-1.975" y="1.25" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="-1.44" x2="-1.55" y2="-1.06" layer="29"/>
 <rectangle x1="-2.4" y1="-1.44" x2="-1.55" y2="-1.06" layer="31"/>
-<smd name="2" x="-1.975" y="0.75" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-1.975" y="0.75" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="-0.94" x2="-1.55" y2="-0.56" layer="29"/>
 <rectangle x1="-2.4" y1="-0.94" x2="-1.55" y2="-0.56" layer="31"/>
-<smd name="3" x="-1.975" y="0.25" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="3" x="-1.975" y="0.25" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="-0.44" x2="-1.55" y2="-0.06" layer="29"/>
 <rectangle x1="-2.4" y1="-0.44" x2="-1.55" y2="-0.06" layer="31"/>
-<smd name="4" x="-1.975" y="-0.25" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="4" x="-1.975" y="-0.25" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="0.06" x2="-1.55" y2="0.44" layer="29"/>
 <rectangle x1="-2.4" y1="0.06" x2="-1.55" y2="0.44" layer="31"/>
-<smd name="5" x="-1.975" y="-0.75" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="5" x="-1.975" y="-0.75" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="0.56" x2="-1.55" y2="0.94" layer="29"/>
 <rectangle x1="-2.4" y1="0.56" x2="-1.55" y2="0.94" layer="31"/>
-<smd name="6" x="-1.975" y="-1.25" dx="0.85" dy="0.38" layer="1" stop="no" cream="no"/>
+<smd name="6" x="-1.975" y="-1.25" dx="0.8" dy="0.3" layer="1" stop="no" cream="no"/>
 <rectangle x1="-2.4" y1="1.06" x2="-1.55" y2="1.44" layer="29"/>
 <rectangle x1="-2.4" y1="1.06" x2="-1.55" y2="1.44" layer="31"/>
-<smd name="7" x="-1.25" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="7" x="-1.25" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-1.44" y1="1.55" x2="-1.06" y2="2.4" layer="29"/>
 <rectangle x1="-1.44" y1="1.55" x2="-1.06" y2="2.4" layer="31"/>
-<smd name="8" x="-0.75" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="-0.75" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-0.94" y1="1.55" x2="-0.56" y2="2.4" layer="29"/>
 <rectangle x1="-0.94" y1="1.55" x2="-0.56" y2="2.4" layer="31"/>
-<smd name="9" x="-0.25" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="-0.25" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-0.44" y1="1.55" x2="-0.06" y2="2.4" layer="29"/>
 <rectangle x1="-0.44" y1="1.55" x2="-0.06" y2="2.4" layer="31"/>
-<smd name="10" x="0.25" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="10" x="0.25" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="0.06" y1="1.55" x2="0.44" y2="2.4" layer="29"/>
 <rectangle x1="0.06" y1="1.55" x2="0.44" y2="2.4" layer="31"/>
-<smd name="11" x="0.75" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="11" x="0.75" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="0.56" y1="1.55" x2="0.94" y2="2.4" layer="29"/>
 <rectangle x1="0.56" y1="1.55" x2="0.94" y2="2.4" layer="31"/>
-<smd name="12" x="1.25" y="-1.975" dx="0.85" dy="0.38" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="12" x="1.25" y="-1.975" dx="0.8" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="1.06" y1="1.55" x2="1.44" y2="2.4" layer="29"/>
 <rectangle x1="1.06" y1="1.55" x2="1.44" y2="2.4" layer="31"/>
-<smd name="13" x="1.975" y="-1.25" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="13" x="1.975" y="-1.25" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="-1.44" x2="2.4" y2="-1.06" layer="29"/>
 <rectangle x1="1.55" y1="-1.44" x2="2.4" y2="-1.06" layer="31"/>
-<smd name="14" x="1.975" y="-0.75" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="14" x="1.975" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="-0.94" x2="2.4" y2="-0.56" layer="29"/>
 <rectangle x1="1.55" y1="-0.94" x2="2.4" y2="-0.56" layer="31"/>
-<smd name="15" x="1.975" y="-0.25" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="15" x="1.975" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="-0.44" x2="2.4" y2="-0.06" layer="29"/>
 <rectangle x1="1.55" y1="-0.44" x2="2.4" y2="-0.06" layer="31"/>
-<smd name="16" x="1.975" y="0.25" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="16" x="1.975" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="0.06" x2="2.4" y2="0.44" layer="29"/>
 <rectangle x1="1.55" y1="0.06" x2="2.4" y2="0.44" layer="31"/>
-<smd name="17" x="1.975" y="0.75" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="17" x="1.975" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="0.56" x2="2.4" y2="0.94" layer="29"/>
 <rectangle x1="1.55" y1="0.56" x2="2.4" y2="0.94" layer="31"/>
-<smd name="18" x="1.975" y="1.25" dx="0.85" dy="0.38" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="18" x="1.975" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R180" stop="no" cream="no"/>
 <rectangle x1="1.55" y1="1.06" x2="2.4" y2="1.44" layer="29"/>
 <rectangle x1="1.55" y1="1.06" x2="2.4" y2="1.44" layer="31"/>
-<smd name="19" x="1.25" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="19" x="1.25" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-1.44" y1="-2.4" x2="-1.06" y2="-1.55" layer="29"/>
 <rectangle x1="-1.44" y1="-2.4" x2="-1.06" y2="-1.55" layer="31"/>
-<smd name="20" x="0.75" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="20" x="0.75" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-0.94" y1="-2.4" x2="-0.56" y2="-1.55" layer="29"/>
 <rectangle x1="-0.94" y1="-2.4" x2="-0.56" y2="-1.55" layer="31"/>
-<smd name="21" x="0.25" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="21" x="0.25" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-0.44" y1="-2.4" x2="-0.06" y2="-1.55" layer="29"/>
 <rectangle x1="-0.44" y1="-2.4" x2="-0.06" y2="-1.55" layer="31"/>
-<smd name="22" x="-0.25" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="22" x="-0.25" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="0.06" y1="-2.4" x2="0.44" y2="-1.55" layer="29"/>
 <rectangle x1="0.06" y1="-2.4" x2="0.44" y2="-1.55" layer="31"/>
-<smd name="23" x="-0.75" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="23" x="-0.75" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="0.56" y1="-2.4" x2="0.94" y2="-1.55" layer="29"/>
 <rectangle x1="0.56" y1="-2.4" x2="0.94" y2="-1.55" layer="31"/>
-<smd name="24" x="-1.25" y="1.975" dx="0.85" dy="0.38" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="24" x="-1.25" y="1.975" dx="0.8" dy="0.3" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="1.06" y1="-2.4" x2="1.44" y2="-1.55" layer="29"/>
 <rectangle x1="1.06" y1="-2.4" x2="1.44" y2="-1.55" layer="31"/>
 <rectangle x1="-2" y1="0" x2="0" y2="2" layer="51"/>
@@ -17520,7 +17520,7 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="P+26" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="DIG_GND16" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="DIG_GND17" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
-<part name="Q1" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="PSMN1R2-30YLC"/>
+<part name="Q1" library="adafruit" deviceset="MOSFET-N" device="REFLOW"/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP20" library="SparkFun-Connectors" deviceset="M04" device="SCREW_LOCK" value="MOTORS"/>
 <part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0805" value="47uF"/>
