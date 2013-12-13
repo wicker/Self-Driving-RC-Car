@@ -9444,7 +9444,7 @@ MAX2769 Universal GPS Receiver Footprint</description>
 <wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.15" layer="94"/>
 <wire x1="12.7" y1="-17.78" x2="12.7" y2="15.24" width="0.15" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.15" layer="94"/>
-<pin name="OUTB" x="17.78" y="-8.89" length="middle" rot="R180"/>
+<pin name="OUTB" x="17.78" y="-6.35" length="middle" rot="R180"/>
 <pin name="NC" x="17.78" y="-13.97" length="middle" direction="nc" rot="R180"/>
 <pin name="GND" x="17.78" y="1.27" length="middle" direction="pwr" rot="R180"/>
 <pin name="VCC" x="17.78" y="3.81" length="middle" direction="pwr" rot="R180"/>
@@ -9456,7 +9456,7 @@ MAX2769 Universal GPS Receiver Footprint</description>
 <pin name="CS" x="-17.78" y="-15.24" length="middle"/>
 <pin name="VBAT" x="2.54" y="20.32" length="middle" direction="pwr" rot="R270"/>
 <pin name="PWM" x="-17.78" y="-7.62" length="middle"/>
-<pin name="OUTA" x="17.78" y="-6.35" length="middle" rot="R180"/>
+<pin name="OUTA" x="17.78" y="-8.89" length="middle" rot="R180"/>
 <text x="-11.43" y="16.51" size="1.778" layer="95">&gt;NAME</text>
 <text x="-11.43" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="CP" x="10.16" y="20.32" length="middle" rot="R270"/>
@@ -10767,8 +10767,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="PA13" x="-46.99" y="-64.77" length="middle"/>
 <pin name="PA14" x="-46.99" y="-67.31" length="middle"/>
 <pin name="PA15" x="-46.99" y="-72.39" length="middle"/>
-<pin name="PB1" x="43.18" y="26.67" length="middle" rot="R180"/>
-<pin name="PB2" x="43.18" y="29.21" length="middle" rot="R180"/>
+<pin name="PB1" x="43.18" y="36.83" length="middle" rot="R180"/>
+<pin name="PB2" x="43.18" y="26.67" length="middle" rot="R180"/>
 <pin name="PB3" x="-46.99" y="-69.85" length="middle"/>
 <pin name="PB4" x="43.18" y="3.81" length="middle" rot="R180"/>
 <pin name="PB5" x="43.18" y="6.35" length="middle" rot="R180"/>
@@ -10830,7 +10830,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="PD13" x="43.18" y="-33.02" length="middle" rot="R180"/>
 <pin name="PD14" x="43.18" y="-30.48" length="middle" rot="R180"/>
 <pin name="PD15" x="43.18" y="-27.94" length="middle" rot="R180"/>
-<pin name="PB0" x="43.18" y="24.13" length="middle" rot="R180"/>
+<pin name="PB0" x="43.18" y="31.75" length="middle" rot="R180"/>
 <pin name="BOOT0" x="-39.37" y="78.74" length="middle" rot="R270"/>
 <pin name="NRST" x="-46.99" y="55.88" length="middle"/>
 <pin name="PH0" x="43.18" y="69.85" length="middle" rot="R180"/>
@@ -10842,10 +10842,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="PE4" x="43.18" y="-63.5" length="middle" rot="R180"/>
 <pin name="PE5" x="43.18" y="-60.96" length="middle" rot="R180"/>
 <pin name="PE6" x="43.18" y="-58.42" length="middle" rot="R180"/>
-<pin name="PE7" x="43.18" y="31.75" length="middle" rot="R180"/>
-<pin name="PE8" x="43.18" y="34.29" length="middle" rot="R180"/>
-<pin name="PE9" x="43.18" y="36.83" length="middle" rot="R180"/>
-<pin name="PE10" x="43.18" y="39.37" length="middle" rot="R180"/>
+<pin name="PE7" x="43.18" y="29.21" length="middle" rot="R180"/>
+<pin name="PE8" x="43.18" y="24.13" length="middle" rot="R180"/>
+<pin name="PE9" x="43.18" y="39.37" length="middle" rot="R180"/>
+<pin name="PE10" x="43.18" y="34.29" length="middle" rot="R180"/>
 <pin name="PE11" x="43.18" y="41.91" length="middle" rot="R180"/>
 <pin name="PE12" x="43.18" y="44.45" length="middle" rot="R180"/>
 <pin name="PE13" x="43.18" y="46.99" length="middle" rot="R180"/>
@@ -17552,7 +17552,7 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="C15" library="rcl3" deviceset="C-EU" device="C0603" value="0.33uF"/>
 <part name="U$12" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="50"/>
 <part name="P+30" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -17715,7 +17715,7 @@ ESCs</text>
 <instance part="C15" gate="G$1" x="-110.49" y="83.82"/>
 <instance part="U$12" gate="G$1" x="-110.49" y="95.25"/>
 <instance part="LED3" gate="G$1" x="-40.64" y="91.44"/>
-<instance part="LED4" gate="G$1" x="-27.94" y="91.44"/>
+<instance part="LED2" gate="G$1" x="-27.94" y="91.44"/>
 <instance part="R1" gate="G$1" x="-40.64" y="80.01" rot="R90"/>
 <instance part="R3" gate="G$1" x="-27.94" y="80.01" rot="R90"/>
 <instance part="P+30" gate="G$1" x="-27.94" y="95.25"/>
@@ -17880,7 +17880,7 @@ ESCs</text>
 <wire x1="-87.63" y1="43.18" x2="-87.63" y2="41.91" width="0.15" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="-27.94" y1="95.25" x2="-27.94" y2="93.98" width="0.15" layer="91"/>
 <pinref part="P+30" gate="G$1" pin="3.3V"/>
 </segment>
@@ -17897,13 +17897,13 @@ ESCs</text>
 <junction x="-59.69" y="88.9"/>
 </segment>
 </net>
-<net name="N$77" class="0">
+<net name="CP" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="U$8" gate="G$1" pin="CP"/>
 </segment>
 </net>
-<net name="N$78" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <wire x1="-50.8" y1="19.05" x2="-48.26" y2="19.05" width="0.15" layer="91"/>
@@ -17920,25 +17920,25 @@ ESCs</text>
 <junction x="-48.26" y="40.64"/>
 </segment>
 </net>
-<net name="N$80" class="0">
+<net name="OUTB" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="OUTA"/>
-<wire x1="-50.8" y1="8.89" x2="-16.51" y2="8.89" width="0.15" layer="91"/>
 <wire x1="-16.51" y1="8.89" x2="-16.51" y2="11.43" width="0.15" layer="91"/>
 <pinref part="JP20" gate="G$1" pin="3"/>
 <wire x1="-16.51" y1="11.43" x2="-12.7" y2="11.43" width="0.15" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="OUTB"/>
+<wire x1="-50.8" y1="8.89" x2="-16.51" y2="8.89" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$81" class="0">
+<net name="OUTA" class="0">
 <segment>
 <pinref part="JP20" gate="G$1" pin="4"/>
 <wire x1="-12.7" y1="8.89" x2="-15.24" y2="8.89" width="0.15" layer="91"/>
 <wire x1="-15.24" y1="8.89" x2="-15.24" y2="6.35" width="0.15" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="OUTB"/>
+<pinref part="U$8" gate="G$1" pin="OUTA"/>
 <wire x1="-15.24" y1="6.35" x2="-50.8" y2="6.35" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$86" class="0">
+<net name="CS" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="CS"/>
 <pinref part="R25" gate="G$1" pin="2"/>
@@ -17949,7 +17949,7 @@ ESCs</text>
 <junction x="-91.44" y="0"/>
 </segment>
 </net>
-<net name="N$85" class="0">
+<net name="PWM" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="PWM"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -17978,21 +17978,21 @@ ESCs</text>
 <junction x="-106.68" y="0"/>
 </segment>
 </net>
-<net name="N$76" class="0">
+<net name="INB" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="INB"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="-99.06" y1="12.7" x2="-86.36" y2="12.7" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$79" class="0">
+<net name="INA" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="INA"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="-99.06" y1="17.78" x2="-86.36" y2="17.78" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$83" class="0">
+<net name="ENB" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="ENB"/>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -18003,7 +18003,7 @@ ESCs</text>
 <junction x="-95.25" y="22.86"/>
 </segment>
 </net>
-<net name="N$84" class="0">
+<net name="ENA" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="ENA"/>
 <pinref part="R20" gate="G$1" pin="2"/>
@@ -18094,7 +18094,7 @@ ESCs</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="-27.94" y1="86.36" x2="-27.94" y2="85.09" width="0.15" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
@@ -19008,65 +19008,65 @@ ESCs</text>
 </net>
 <net name="MD_ENA" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PE10"/>
 <wire x1="328.93" y1="147.32" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="147.32" x2="321.31" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="321.31" y1="153.67" x2="289.56" y2="153.67" width="0.1524" layer="91"/>
 <label x="328.93" y="147.32" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PE9"/>
+<wire x1="289.56" y1="153.67" x2="321.31" y2="153.67" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_ENB" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PE9"/>
 <wire x1="328.93" y1="143.51" x2="327.66" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="143.51" x2="320.04" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="151.13" x2="289.56" y2="151.13" width="0.1524" layer="91"/>
 <label x="328.93" y="143.51" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PB1"/>
+<wire x1="320.04" y1="151.13" x2="289.56" y2="151.13" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_INA" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PE8"/>
 <wire x1="328.93" y1="139.7" x2="327.66" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="139.7" x2="318.77" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="318.77" y1="148.59" x2="289.56" y2="148.59" width="0.1524" layer="91"/>
 <label x="328.93" y="139.7" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PE10"/>
+<wire x1="289.56" y1="148.59" x2="318.77" y2="148.59" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_INB" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PE7"/>
 <wire x1="328.93" y1="135.89" x2="327.66" y2="135.89" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="135.89" x2="317.5" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="146.05" x2="289.56" y2="146.05" width="0.1524" layer="91"/>
 <label x="328.93" y="135.89" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PB0"/>
+<wire x1="317.5" y1="146.05" x2="289.56" y2="146.05" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_PWM" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PB2"/>
 <wire x1="328.93" y1="132.08" x2="327.66" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="132.08" x2="316.23" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="316.23" y1="143.51" x2="289.56" y2="143.51" width="0.1524" layer="91"/>
 <label x="328.93" y="132.08" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PE7"/>
+<wire x1="289.56" y1="143.51" x2="316.23" y2="143.51" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_CS" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PB1"/>
 <wire x1="328.93" y1="128.27" x2="327.66" y2="128.27" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="128.27" x2="314.96" y2="140.97" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="140.97" x2="289.56" y2="140.97" width="0.1524" layer="91"/>
 <label x="328.93" y="128.27" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PB2"/>
+<wire x1="314.96" y1="140.97" x2="289.56" y2="140.97" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="MD_CSDIS" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="PB0"/>
 <wire x1="328.93" y1="124.46" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="124.46" x2="313.69" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="313.69" y1="138.43" x2="289.56" y2="138.43" width="0.1524" layer="91"/>
 <label x="328.93" y="124.46" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="PE8"/>
+<wire x1="289.56" y1="138.43" x2="313.69" y2="138.43" width="0.15" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="0">
