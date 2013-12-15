@@ -9717,7 +9717,7 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="P+19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="TP6" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
-<part name="TP2" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP2" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="J3" library="maxstream" deviceset="XBEE" device="-PRO"/>
 <part name="P+20" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="P+21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
