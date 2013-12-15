@@ -9710,12 +9710,12 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="100"/>
 <part name="DIG_GND9" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="P+18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="J1" library="SparkFun" deviceset="USB_MICROB_PLUG" device="-PTH" value="USB_MICROB"/>
+<part name="J1" library="SparkFun" deviceset="USB_MICROB_PLUG" device="-PTH" value=""/>
 <part name="DIG_GND11" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
-<part name="TP1" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="TP7" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP1" library="testpad" deviceset="TP" device="TP06R" value=""/>
+<part name="TP7" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="P+19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="TP6" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="TP2" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="J3" library="maxstream" deviceset="XBEE" device="-PRO"/>
@@ -9832,15 +9832,15 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="LED5" library="led" deviceset="LED" device="CHIPLED_0603"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
 <part name="JP10" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP16" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP17" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP18" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP23" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
-<part name="JP24" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
+<part name="JP16" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP17" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP18" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP23" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
+<part name="JP24" library="SparkFun-Connectors" deviceset="M01" device="PTH" value=""/>
 <part name="JP25" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
 <part name="JP26" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
 <part name="JP27" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
