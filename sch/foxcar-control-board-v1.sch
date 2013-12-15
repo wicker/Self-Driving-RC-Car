@@ -9712,9 +9712,7 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="P+18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="J1" library="SparkFun" deviceset="USB_MICROB_PLUG" device="-PTH" value="USB_MICROB"/>
 <part name="DIG_GND11" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1.5k"/>
 <part name="TP1" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="TP5" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP7" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="P+19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="TP6" library="testpad" deviceset="TP" device="TP06R"/>
@@ -9794,7 +9792,6 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="C18" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
 <part name="DIG_GND26" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="DIG_GND27" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
-<part name="TP12" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="P+1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C21" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="DIG_GND28" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
@@ -9804,7 +9801,6 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <part name="DIG_GND30" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="DIG_GND31" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="DIG_GND32" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
-<part name="TP14" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="DIG_GND33" library="SparkFun-Aesthetics" deviceset="GND" device="" value="GND"/>
 <part name="C20" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="100nF"/>
@@ -10383,11 +10379,9 @@ ESCs</text>
 <instance part="P+18" gate="G$1" x="83.82" y="46.99"/>
 <instance part="J1" gate="G$1" x="106.68" y="165.1" rot="MR0"/>
 <instance part="DIG_GND11" gate="1" x="116.84" y="157.48" rot="MR0"/>
-<instance part="R9" gate="G$1" x="153.67" y="176.53" rot="MR90"/>
 <instance part="TP1" gate="G$1" x="139.7" y="176.53"/>
-<instance part="TP5" gate="G$1" x="127" y="176.53"/>
 <instance part="TP7" gate="G$1" x="133.35" y="176.53"/>
-<instance part="P+19" gate="G$1" x="153.67" y="185.42"/>
+<instance part="P+19" gate="G$1" x="184.15" y="185.42"/>
 <instance part="TP6" gate="G$1" x="144.78" y="176.53"/>
 <instance part="R8" gate="G$1" x="184.15" y="177.8" rot="MR90"/>
 <instance part="TP2" gate="G$1" x="190.5" y="172.72"/>
@@ -10424,7 +10418,6 @@ ESCs</text>
 <instance part="C18" gate="G$1" x="222.25" y="204.47" rot="MR180"/>
 <instance part="DIG_GND26" gate="1" x="232.41" y="196.85" rot="MR0"/>
 <instance part="DIG_GND27" gate="1" x="222.25" y="196.85" rot="MR0"/>
-<instance part="TP12" gate="G$1" x="273.05" y="214.63"/>
 <instance part="P+1" gate="G$1" x="247.65" y="223.52"/>
 <instance part="C21" gate="G$1" x="356.87" y="215.9" rot="MR180"/>
 <instance part="DIG_GND28" gate="1" x="356.87" y="205.74" rot="MR0"/>
@@ -10434,7 +10427,6 @@ ESCs</text>
 <instance part="DIG_GND30" gate="1" x="312.42" y="171.45"/>
 <instance part="DIG_GND31" gate="1" x="330.2" y="171.45"/>
 <instance part="DIG_GND32" gate="1" x="240.03" y="13.97"/>
-<instance part="TP14" gate="G$1" x="226.06" y="20.32"/>
 <instance part="C9" gate="G$1" x="369.57" y="215.9" rot="MR180"/>
 <instance part="DIG_GND33" gate="1" x="369.57" y="205.74" rot="MR0"/>
 <instance part="C20" gate="G$1" x="381" y="215.9" rot="MR180"/>
@@ -10605,14 +10597,10 @@ ESCs</text>
 <pinref part="P+18" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="P+19" gate="G$1" pin="3.3V"/>
-<wire x1="153.67" y1="181.61" x2="153.67" y2="184.15" width="0.15" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="153.67" y1="184.15" x2="153.67" y2="185.42" width="0.15" layer="91"/>
 <wire x1="184.15" y1="182.88" x2="184.15" y2="184.15" width="0.15" layer="91"/>
-<wire x1="153.67" y1="184.15" x2="184.15" y2="184.15" width="0.15" layer="91"/>
-<junction x="153.67" y="184.15"/>
+<wire x1="184.15" y1="185.42" x2="184.15" y2="184.15" width="0.15" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="VREF"/>
@@ -10727,9 +10715,6 @@ ESCs</text>
 <junction x="242.57" y="212.09"/>
 <wire x1="242.57" y1="193.04" x2="242.57" y2="212.09" width="0.15" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VCAP_1"/>
-<pinref part="TP12" gate="G$1" pin="TP"/>
-<junction x="273.05" y="212.09"/>
-<wire x1="270.51" y1="212.09" x2="273.05" y2="212.09" width="0.15" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VDDA"/>
 <wire x1="255.27" y1="193.04" x2="255.27" y2="212.09" width="0.15" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VDD6"/>
@@ -11029,9 +11014,7 @@ ESCs</text>
 <wire x1="240.03" y1="17.78" x2="240.03" y2="16.51" width="0.15" layer="91"/>
 <pinref part="DIG_GND32" gate="1" pin="GND"/>
 <junction x="240.03" y="17.78"/>
-<pinref part="TP14" gate="G$1" pin="TP"/>
 <wire x1="240.03" y1="17.78" x2="237.49" y2="17.78" width="0.15" layer="91"/>
-<wire x1="237.49" y1="17.78" x2="226.06" y2="17.78" width="0.15" layer="91"/>
 <wire x1="240.03" y1="17.78" x2="240.03" y2="25.4" width="0.15" layer="91"/>
 <wire x1="240.03" y1="17.78" x2="242.57" y2="17.78" width="0.15" layer="91"/>
 <wire x1="242.57" y1="17.78" x2="242.57" y2="25.4" width="0.15" layer="91"/>
@@ -11039,7 +11022,6 @@ ESCs</text>
 <wire x1="237.49" y1="25.4" x2="237.49" y2="17.78" width="0.15" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VSS2"/>
 <pinref part="U3" gate="G$1" pin="VSS3"/>
-<junction x="237.49" y="17.78"/>
 <wire x1="242.57" y1="17.78" x2="254" y2="17.78" width="0.15" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VSSA"/>
 <wire x1="254" y1="17.78" x2="254" y2="25.4" width="0.15" layer="91"/>
@@ -11119,9 +11101,6 @@ ESCs</text>
 <wire x1="153.67" y1="165.1" x2="157.48" y2="165.1" width="0.15" layer="91"/>
 <wire x1="157.48" y1="165.1" x2="157.48" y2="158.75" width="0.15" layer="91"/>
 <wire x1="157.48" y1="158.75" x2="199.39" y2="158.75" width="0.15" layer="91"/>
-<wire x1="153.67" y1="165.1" x2="153.67" y2="171.45" width="0.15" layer="91"/>
-<junction x="153.67" y="165.1"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="D+"/>
 <label x="177.8" y="158.75" size="1.778" layer="95"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
@@ -11150,12 +11129,9 @@ ESCs</text>
 <wire x1="114.3" y1="170.18" x2="118.11" y2="170.18" width="0.15" layer="91"/>
 <wire x1="118.11" y1="170.18" x2="118.11" y2="175.26" width="0.15" layer="91"/>
 <wire x1="118.11" y1="170.18" x2="127" y2="170.18" width="0.15" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
 <wire x1="127" y1="170.18" x2="162.56" y2="170.18" width="0.15" layer="91"/>
 <wire x1="162.56" y1="170.18" x2="162.56" y2="163.83" width="0.15" layer="91"/>
 <wire x1="162.56" y1="163.83" x2="199.39" y2="163.83" width="0.15" layer="91"/>
-<wire x1="127" y1="173.99" x2="127" y2="170.18" width="0.15" layer="91"/>
-<junction x="127" y="170.18"/>
 <junction x="118.11" y="170.18"/>
 <label x="177.8" y="163.83" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="PA9"/>
