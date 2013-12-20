@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="PWR" color="1" fill="3" visible="no" active="yes"/>
@@ -126,13 +126,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="91.1025" y2="0" width="0" layer="20"/>
-<wire x1="91.1025" y1="0" x2="91.1025" y2="55.8675" width="0" layer="20"/>
-<wire x1="91.1025" y1="55.8675" x2="0" y2="55.8675" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="88.88" y2="0" width="0" layer="20"/>
+<wire x1="88.88" y1="0" x2="88.88" y2="55.8675" width="0" layer="20"/>
+<wire x1="88.88" y1="55.8675" x2="0" y2="55.8675" width="0" layer="20"/>
 <wire x1="0" y1="55.8675" x2="0" y2="0" width="0" layer="20"/>
-<text x="84.7725" y="49.53" size="1.016" layer="21">Foxcar
-Control
-Board v1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -2270,7 +2267,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP18" library="SparkFun-Connectors" package="1X08_LOCK_LONGPADS" value="" x="34.29" y="52.3875"/>
 <element name="JP14" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="23.1775" y="25.4"/>
 <element name="JP20" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="23.495" y="29.5275"/>
-<element name="JP17" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="44.1325" y="3.81" rot="R180"/>
+<element name="JP17" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="44.1325" y="3.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.4787" y="6.4262" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="45.4025" y="6.985" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="JP19" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="29.5275" y="16.1925" rot="R180"/>
 <element name="JP16" library="SparkFun-Connectors" package="1X02_LOCK_LONGPADS" value="" x="27.6225" y="11.43"/>
 </elements>
@@ -2598,10 +2598,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="0.3175" y="54.9275"/>
 <vertex x="0.3175" y="0.635"/>
 <vertex x="0.635" y="0.3175"/>
-<vertex x="89.535" y="0.3175"/>
-<vertex x="90.805" y="1.5875"/>
-<vertex x="90.805" y="2.8575"/>
-<vertex x="89.8525" y="3.81"/>
+<vertex x="87.3125" y="0.3175"/>
+<vertex x="88.5825" y="1.5875"/>
+<vertex x="88.5825" y="2.8575"/>
+<vertex x="87.63" y="3.81"/>
 <vertex x="73.66" y="3.81"/>
 <vertex x="73.3425" y="4.1275"/>
 <vertex x="73.3425" y="9.8425"/>
@@ -2620,10 +2620,9 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="62.5475" y="22.225"/>
 <vertex x="62.5475" y="29.845"/>
 <vertex x="62.865" y="30.48"/>
-<vertex x="88.9" y="30.48"/>
-<vertex x="89.8525" y="31.4325"/>
-<vertex x="89.8525" y="52.705"/>
-<vertex x="88.265" y="54.2925"/>
+<vertex x="87.63" y="30.48"/>
+<vertex x="87.63" y="53.0225"/>
+<vertex x="86.6775" y="54.2925"/>
 <vertex x="81.915" y="54.2925"/>
 <vertex x="80.3275" y="52.705"/>
 <vertex x="80.3275" y="48.5775"/>
@@ -2662,11 +2661,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="61.595" y="12.3825" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="80.645" y="31.75" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="84.455" y="32.7025" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="86.6775" y="34.29" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="87.9475" y="39.6875" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="87.9475" y="43.4975" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="87.3125" y="45.72" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="86.995" y="47.9425" extent="1-16" drill="0.3302" diameter="0.6858"/>
+<via x="86.36" y="38.735" extent="1-16" drill="0.3302" diameter="0.6858"/>
+<via x="86.0425" y="44.1325" extent="1-16" drill="0.3302" diameter="0.6858"/>
+<via x="86.0425" y="50.4825" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="59.055" y="49.53" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="61.9125" y="49.53" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="46.6725" y="40.9575" extent="1-16" drill="0.3302" diameter="0.6858"/>
@@ -2907,10 +2904,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="80.3275" y="5.715"/>
 <vertex x="80.3275" y="10.16"/>
 <vertex x="81.915" y="11.7475"/>
-<vertex x="87.3125" y="11.7475"/>
-<vertex x="88.265" y="12.7"/>
-<vertex x="88.265" y="13.335"/>
-<vertex x="87.63" y="13.97"/>
+<vertex x="84.7725" y="11.7475"/>
+<vertex x="86.0425" y="12.7"/>
+<vertex x="86.0425" y="13.335"/>
+<vertex x="84.7725" y="13.97"/>
 <vertex x="80.9625" y="13.97"/>
 <vertex x="80.645" y="14.2875"/>
 <vertex x="80.645" y="18.0975"/>
@@ -2944,20 +2941,17 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="63.1825" y="27.94"/>
 <vertex x="63.1825" y="28.8925"/>
 <vertex x="63.8175" y="29.5275"/>
-<vertex x="87.3125" y="29.5275"/>
-<vertex x="88.9" y="28.2575"/>
-<vertex x="90.17" y="26.67"/>
-<vertex x="90.17" y="6.6675"/>
-<vertex x="89.2175" y="5.3975"/>
-<vertex x="88.5825" y="4.7625"/>
+<vertex x="86.995" y="29.5275"/>
+<vertex x="88.265" y="28.2575"/>
+<vertex x="88.265" y="6.35"/>
+<vertex x="87.9475" y="5.3975"/>
+<vertex x="87.3125" y="4.7625"/>
 <vertex x="82.55" y="4.7625"/>
 <vertex x="81.28" y="6.0325"/>
 <vertex x="81.28" y="9.8425"/>
 <vertex x="82.55" y="11.1125"/>
-<vertex x="87.63" y="11.1125"/>
-<vertex x="88.9" y="12.3825"/>
-<vertex x="88.9" y="13.6525"/>
-<vertex x="86.995" y="15.5575"/>
+<vertex x="86.0425" y="11.1125"/>
+<vertex x="86.995" y="12.3825"/>
 <vertex x="86.995" y="25.7175"/>
 <vertex x="85.4075" y="27.305"/>
 <vertex x="80.9625" y="27.305"/>
@@ -4372,10 +4366,4 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
