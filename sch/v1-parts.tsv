@@ -1,0 +1,35 @@
+Parts	Qty	Name	Manufacturer	Part Number	Package
+C1	1	Cap, Ceramic, 0.33uF, 25V, 10%	TDK	C1005X5R1E334K050BB	0402
+C2	1	Cap, Ceramic, 33nF, 16V, 10%	SMTZone	SMT KIT	0402
+"C3,C6-C8,C17,
+C18,C20-C24"	11	Cap, Ceramic, 0.1uF, 10V, 10%	SMTZone	SMT KIT	0402
+C4	1	Cap, Ceramic, 10uF, 10V, 10%	Samsung	CL05A106MP5NUNC	0402
+C5	1	Cap, Aluminum, 47uF, 25V, 10%	Panasonic	EEE-1EA470WP	RADCAN
+C9	1	Cap, Ceramic, 10nF, 50V, 10%	SMTZone	SMT KIT	0402
+C10,C14,C15	3	Cap, Ceramic, 2.2uF, 10V, 20%	Kemet	C0402C225M8PACTU	0402
+C11	1	Cap, Ceramic, 4.7uF, 10V, 20%	Samsung	CL05A475MP5NRNC	0402
+C12,C13	2	Cap, Ceramic, 0.22uF, 6.3V, 10%	SMTZone	SMT KIT	0402
+C16,C19	1	Cap, Ceramic, 15pF, 50V, 5%	SMTZone	SMT KIT	0402
+CTS1	1	Crystal, 25MHz, 18pF	CTS	406I35D25M00000	CTS406
+D1	1	Diode, 20V, 1A	Diodes Inc	B120-13-F	SMA
+J1	1	Conn, microSD, Push-Push	3M	2908-05WB-MG	microSD
+J2	1	Header, XBee Pro	Sparkfun	PRT-08272 	Header
+J3	1	Conn, Micro-USB B, SMD	TE Connectivity	1981568-1	microUSB-B
+JP1	1	Term Block, 2pin, R/A, 5mm	On Shore	OSTTH020160	Header
+JP2	1	Term Block, 4pin, R/A, 5mm	On Shore	OSTTH040160	Header
+JP3-JP7	5	Header, 1x3	--	On Hand	
+JP8-JP12	Lots	Headers, 0.1"	--	On Hand	
+LED1-5	5	LED, Green, 568nm	Kingbright	APT1608SGC	0603
+Q1	1	MOSFET, NPN, 30V, 80A	Infineon	IPP034NE7N3 G	TO-220-3
+R1,R7,R16	3	Resistor, 10k, 1%, 1/10W	SMTZone	SMT KIT	0402
+R2-R6,R9	6	Resistor, 1k, 1%, 1/10W	SMTZone	SMT KIT	0402
+R8,R10	2	Resistor, 4.7k, 1%, 1/10W	SMTZone	SMT KIT	0402
+R11	1	Resistor, 270, 5%, 1/4W	Rohm	ESR03EZPJ271	0603
+R12,R17-R19	4	Resistor, 49.9, 1%, 1/10W	SMTZone	SMT KIT	0402
+R13	1	Resistor, 100, 1%, 1/10W	SMTZone	SMT KIT	0402
+R14-R15	2	Resistor 1.5k, 1%, 1/10W	SMTZone	SMT KIT	0402
+U1	1	IC, Volt Reg, LDO, 3.3V, 3A	STMicroelectronics	SPX29300	TO263-5
+U2	1	IC, Motor Driver	STMicroelectronics	VNH5019	MULTIPOWERSO-30
+U3	1	IC, Gyro/Accel, 6-Axis, SPI	InvenSense	MPU6000	24QFN
+U4	1	IC, Compass, 3-Axis, I2C	Honeywell	HMC5883L	16LPCC
+U5	1	IC, MCU, 32bit, 1MB Flash	STMicroelectronics	STM32F407VGT6	LQFP100
