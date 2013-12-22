@@ -18,7 +18,7 @@ J3	1	Conn, Micro-USB B, SMD	TE Connectivity	1981568-1	microUSB-B
 JP1	1	Term Block, 2pin, R/A, 5mm	On Shore	OSTTH020160	Header
 JP2	1	Term Block, 4pin, R/A, 5mm	On Shore	OSTTH040160	Header
 JP3-JP7	5	Header, 1x3	--	On Hand	
-JP8-JP12	Lots	Headers, 0.1"	--	On Hand	
+JP8-JP12	Lots	Headers, 0.1in	--	On Hand	
 LED1-5	5	LED, Green, 568nm	Kingbright	APT1608SGC	0603
 Q1	1	MOSFET, NPN, 30V, 80A	Infineon	IPP034NE7N3 G	TO-220-3
 R1,R7,R16	3	Resistor, 10k, 1%, 1/10W	SMTZone	SMT KIT	0402
