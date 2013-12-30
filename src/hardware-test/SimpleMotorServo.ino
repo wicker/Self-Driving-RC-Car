@@ -29,7 +29,7 @@ void stopIfFault()
 void setup()
 {
   servo.attach(servoPin);
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("Dual VNH5019 Motor Shield");
   md.init();
 
