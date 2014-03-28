@@ -1,0 +1,292 @@
+ARM GAS  /tmp/cclmlwXB.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 3
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 2
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"mac_lld.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              	.Letext0:
+  21              		.file 1 "/opt/psas/x-tools/stm32f407/arm-psas-eabi/bin/../lib/gcc/arm-psas-eabi/4.7.2/../../../../
+  22              		.file 2 "/home/wicker/tools/ChibiOS_2.6.3/os/ports/common/ARMCMx/CMSIS/include/core_cm4.h"
+  23              		.section	.debug_info,"",%progbits
+  24              	.Ldebug_info0:
+  25 0000 8F000000 		.4byte	0x8f
+  26 0004 0200     		.2byte	0x2
+  27 0006 00000000 		.4byte	.Ldebug_abbrev0
+  28 000a 04       		.byte	0x4
+  29 000b 01       		.uleb128 0x1
+  30 000c 70000000 		.4byte	.LASF12
+  31 0010 01       		.byte	0x1
+  32 0011 2E000000 		.4byte	.LASF13
+  33 0015 00000000 		.4byte	.Ldebug_line0
+  34 0019 02       		.uleb128 0x2
+  35 001a 01       		.byte	0x1
+  36 001b 06       		.byte	0x6
+  37 001c D4000000 		.4byte	.LASF0
+  38 0020 02       		.uleb128 0x2
+  39 0021 01       		.byte	0x1
+  40 0022 08       		.byte	0x8
+  41 0023 A5000000 		.4byte	.LASF1
+  42 0027 02       		.uleb128 0x2
+  43 0028 02       		.byte	0x2
+  44 0029 05       		.byte	0x5
+  45 002a E0000000 		.4byte	.LASF2
+  46 002e 02       		.uleb128 0x2
+  47 002f 02       		.byte	0x2
+  48 0030 07       		.byte	0x7
+  49 0031 0E000000 		.4byte	.LASF3
+  50 0035 03       		.uleb128 0x3
+  51 0036 04       		.byte	0x4
+  52 0037 05       		.byte	0x5
+  53 0038 696E7400 		.ascii	"int\000"
+  54 003c 02       		.uleb128 0x2
+  55 003d 04       		.byte	0x4
+  56 003e 07       		.byte	0x7
+  57 003f 21000000 		.4byte	.LASF4
+ARM GAS  /tmp/cclmlwXB.s 			page 2
+
+
+  58 0043 02       		.uleb128 0x2
+  59 0044 08       		.byte	0x8
+  60 0045 05       		.byte	0x5
+  61 0046 00000000 		.4byte	.LASF5
+  62 004a 02       		.uleb128 0x2
+  63 004b 08       		.byte	0x8
+  64 004c 07       		.byte	0x7
+  65 004d 8E000000 		.4byte	.LASF6
+  66 0051 02       		.uleb128 0x2
+  67 0052 04       		.byte	0x4
+  68 0053 05       		.byte	0x5
+  69 0054 B8000000 		.4byte	.LASF7
+  70 0058 02       		.uleb128 0x2
+  71 0059 04       		.byte	0x4
+  72 005a 07       		.byte	0x7
+  73 005b F2000000 		.4byte	.LASF8
+  74 005f 02       		.uleb128 0x2
+  75 0060 04       		.byte	0x4
+  76 0061 07       		.byte	0x7
+  77 0062 7C000000 		.4byte	.LASF9
+  78 0066 02       		.uleb128 0x2
+  79 0067 01       		.byte	0x1
+  80 0068 08       		.byte	0x8
+  81 0069 B3000000 		.4byte	.LASF10
+  82 006d 04       		.uleb128 0x4
+  83 006e EA000000 		.4byte	.LASF14
+  84 0072 01       		.byte	0x1
+  85 0073 4F       		.byte	0x4f
+  86 0074 51000000 		.4byte	0x51
+  87 0078 02       		.uleb128 0x2
+  88 0079 01       		.byte	0x1
+  89 007a 02       		.byte	0x2
+  90 007b C1000000 		.4byte	.LASF11
+  91 007f 05       		.uleb128 0x5
+  92 0080 6D000000 		.4byte	0x6d
+  93 0084 06       		.uleb128 0x6
+  94 0085 C7000000 		.4byte	.LASF15
+  95 0089 02       		.byte	0x2
+  96 008a 9806     		.2byte	0x698
+  97 008c 7F000000 		.4byte	0x7f
+  98 0090 01       		.byte	0x1
+  99 0091 01       		.byte	0x1
+ 100 0092 00       		.byte	0
+ 101              		.section	.debug_abbrev,"",%progbits
+ 102              	.Ldebug_abbrev0:
+ 103 0000 01       		.uleb128 0x1
+ 104 0001 11       		.uleb128 0x11
+ 105 0002 01       		.byte	0x1
+ 106 0003 25       		.uleb128 0x25
+ 107 0004 0E       		.uleb128 0xe
+ 108 0005 13       		.uleb128 0x13
+ 109 0006 0B       		.uleb128 0xb
+ 110 0007 03       		.uleb128 0x3
+ 111 0008 0E       		.uleb128 0xe
+ 112 0009 10       		.uleb128 0x10
+ 113 000a 06       		.uleb128 0x6
+ 114 000b 00       		.byte	0
+ARM GAS  /tmp/cclmlwXB.s 			page 3
+
+
+ 115 000c 00       		.byte	0
+ 116 000d 02       		.uleb128 0x2
+ 117 000e 24       		.uleb128 0x24
+ 118 000f 00       		.byte	0
+ 119 0010 0B       		.uleb128 0xb
+ 120 0011 0B       		.uleb128 0xb
+ 121 0012 3E       		.uleb128 0x3e
+ 122 0013 0B       		.uleb128 0xb
+ 123 0014 03       		.uleb128 0x3
+ 124 0015 0E       		.uleb128 0xe
+ 125 0016 00       		.byte	0
+ 126 0017 00       		.byte	0
+ 127 0018 03       		.uleb128 0x3
+ 128 0019 24       		.uleb128 0x24
+ 129 001a 00       		.byte	0
+ 130 001b 0B       		.uleb128 0xb
+ 131 001c 0B       		.uleb128 0xb
+ 132 001d 3E       		.uleb128 0x3e
+ 133 001e 0B       		.uleb128 0xb
+ 134 001f 03       		.uleb128 0x3
+ 135 0020 08       		.uleb128 0x8
+ 136 0021 00       		.byte	0
+ 137 0022 00       		.byte	0
+ 138 0023 04       		.uleb128 0x4
+ 139 0024 16       		.uleb128 0x16
+ 140 0025 00       		.byte	0
+ 141 0026 03       		.uleb128 0x3
+ 142 0027 0E       		.uleb128 0xe
+ 143 0028 3A       		.uleb128 0x3a
+ 144 0029 0B       		.uleb128 0xb
+ 145 002a 3B       		.uleb128 0x3b
+ 146 002b 0B       		.uleb128 0xb
+ 147 002c 49       		.uleb128 0x49
+ 148 002d 13       		.uleb128 0x13
+ 149 002e 00       		.byte	0
+ 150 002f 00       		.byte	0
+ 151 0030 05       		.uleb128 0x5
+ 152 0031 35       		.uleb128 0x35
+ 153 0032 00       		.byte	0
+ 154 0033 49       		.uleb128 0x49
+ 155 0034 13       		.uleb128 0x13
+ 156 0035 00       		.byte	0
+ 157 0036 00       		.byte	0
+ 158 0037 06       		.uleb128 0x6
+ 159 0038 34       		.uleb128 0x34
+ 160 0039 00       		.byte	0
+ 161 003a 03       		.uleb128 0x3
+ 162 003b 0E       		.uleb128 0xe
+ 163 003c 3A       		.uleb128 0x3a
+ 164 003d 0B       		.uleb128 0xb
+ 165 003e 3B       		.uleb128 0x3b
+ 166 003f 05       		.uleb128 0x5
+ 167 0040 49       		.uleb128 0x49
+ 168 0041 13       		.uleb128 0x13
+ 169 0042 3F       		.uleb128 0x3f
+ 170 0043 0C       		.uleb128 0xc
+ 171 0044 3C       		.uleb128 0x3c
+ARM GAS  /tmp/cclmlwXB.s 			page 4
+
+
+ 172 0045 0C       		.uleb128 0xc
+ 173 0046 00       		.byte	0
+ 174 0047 00       		.byte	0
+ 175 0048 00       		.byte	0
+ 176              		.section	.debug_aranges,"",%progbits
+ 177 0000 14000000 		.4byte	0x14
+ 178 0004 0200     		.2byte	0x2
+ 179 0006 00000000 		.4byte	.Ldebug_info0
+ 180 000a 04       		.byte	0x4
+ 181 000b 00       		.byte	0
+ 182 000c 0000     		.2byte	0
+ 183 000e 0000     		.2byte	0
+ 184 0010 00000000 		.4byte	0
+ 185 0014 00000000 		.4byte	0
+ 186              		.section	.debug_line,"",%progbits
+ 187              	.Ldebug_line0:
+ 188 0000 E8000000 		.section	.debug_str,"MS",%progbits,1
+ 188      0200E200 
+ 188      00000201 
+ 188      FB0E0D00 
+ 188      01010101 
+ 189              	.LASF5:
+ 190 0000 6C6F6E67 		.ascii	"long long int\000"
+ 190      206C6F6E 
+ 190      6720696E 
+ 190      7400
+ 191              	.LASF3:
+ 192 000e 73686F72 		.ascii	"short unsigned int\000"
+ 192      7420756E 
+ 192      7369676E 
+ 192      65642069 
+ 192      6E7400
+ 193              	.LASF4:
+ 194 0021 756E7369 		.ascii	"unsigned int\000"
+ 194      676E6564 
+ 194      20696E74 
+ 194      00
+ 195              	.LASF13:
+ 196 002e 2F686F6D 		.ascii	"/home/wicker/tools/ChibiOS_2.6.3/os/hal/platforms/S"
+ 196      652F7769 
+ 196      636B6572 
+ 196      2F746F6F 
+ 196      6C732F43 
+ 197 0061 544D3332 		.ascii	"TM32/mac_lld.c\000"
+ 197      2F6D6163 
+ 197      5F6C6C64 
+ 197      2E6300
+ 198              	.LASF12:
+ 199 0070 474E5520 		.ascii	"GNU C 4.7.2\000"
+ 199      4320342E 
+ 199      372E3200 
+ 200              	.LASF9:
+ 201 007c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 201      20756E73 
+ 201      69676E65 
+ 201      6420696E 
+ 201      7400
+ARM GAS  /tmp/cclmlwXB.s 			page 5
+
+
+ 202              	.LASF6:
+ 203 008e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 203      206C6F6E 
+ 203      6720756E 
+ 203      7369676E 
+ 203      65642069 
+ 204              	.LASF1:
+ 205 00a5 756E7369 		.ascii	"unsigned char\000"
+ 205      676E6564 
+ 205      20636861 
+ 205      7200
+ 206              	.LASF10:
+ 207 00b3 63686172 		.ascii	"char\000"
+ 207      00
+ 208              	.LASF7:
+ 209 00b8 6C6F6E67 		.ascii	"long int\000"
+ 209      20696E74 
+ 209      00
+ 210              	.LASF11:
+ 211 00c1 5F426F6F 		.ascii	"_Bool\000"
+ 211      6C00
+ 212              	.LASF15:
+ 213 00c7 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 213      52784275 
+ 213      66666572 
+ 213      00
+ 214              	.LASF0:
+ 215 00d4 7369676E 		.ascii	"signed char\000"
+ 215      65642063 
+ 215      68617200 
+ 216              	.LASF2:
+ 217 00e0 73686F72 		.ascii	"short int\000"
+ 217      7420696E 
+ 217      7400
+ 218              	.LASF14:
+ 219 00ea 696E7433 		.ascii	"int32_t\000"
+ 219      325F7400 
+ 220              	.LASF8:
+ 221 00f2 73697A65 		.ascii	"sizetype\000"
+ 221      74797065 
+ 221      00
+ 222              		.ident	"GCC: (crosstool-NG 1.17.0 - PSAS ST32F4 GFE) 4.7.2"
+ARM GAS  /tmp/cclmlwXB.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 mac_lld.c
+
+NO UNDEFINED SYMBOLS
