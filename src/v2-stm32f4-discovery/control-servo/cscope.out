@@ -1,0 +1,3080 @@
+cscope 15 $HOME/proj/wicker/Self-Driving-RC-Car/src/v2-stm32f4-discovery/control-servo               0000019216
+	@chconf.h
+
+28 #i‚de‡
+_CHCONF_H_
+
+
+29 
+	#_CHCONF_H_
+
+
+	)
+
+43 #i‡!
+deföed
+(
+CH_FREQUENCY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+44 
+	#CH_FREQUENCY
+ 1000
+
+	)
+
+58 #i‡!
+deföed
+(
+CH_TIME_QUANTUM
+Ë|| deföed(
+__DOXYGEN__
+)
+
+59 
+	#CH_TIME_QUANTUM
+ 20
+
+	)
+
+73 #i‡!
+deföed
+(
+CH_MEMCORE_SIZE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+74 
+	#CH_MEMCORE_SIZE
+ 0
+
+	)
+
+90 #i‡!
+deföed
+(
+CH_NO_IDLE_THREAD
+Ë|| deföed(
+__DOXYGEN__
+)
+
+91 
+	#CH_NO_IDLE_THREAD
+ 
+FALSE
+
+
+	)
+
+111 #i‡!
+deföed
+(
+CH_OPTIMIZE_SPEED
+Ë|| deföed(
+__DOXYGEN__
+)
+
+112 
+	#CH_OPTIMIZE_SPEED
+ 
+TRUE
+
+
+	)
+
+130 #i‡!
+deföed
+(
+CH_USE_REGISTRY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+131 
+	#CH_USE_REGISTRY
+ 
+TRUE
+
+
+	)
+
+141 #i‡!
+deföed
+(
+CH_USE_WAITEXIT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+142 
+	#CH_USE_WAITEXIT
+ 
+TRUE
+
+
+	)
+
+151 #i‡!
+deföed
+(
+CH_USE_SEMAPHORES
+Ë|| deföed(
+__DOXYGEN__
+)
+
+152 
+	#CH_USE_SEMAPHORES
+ 
+TRUE
+
+
+	)
+
+163 #i‡!
+deföed
+(
+CH_USE_SEMAPHORES_PRIORITY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+164 
+	#CH_USE_SEMAPHORES_PRIORITY
+ 
+FALSE
+
+
+	)
+
+175 #i‡!
+deföed
+(
+CH_USE_SEMSW
+Ë|| deföed(
+__DOXYGEN__
+)
+
+176 
+	#CH_USE_SEMSW
+ 
+TRUE
+
+
+	)
+
+185 #i‡!
+deföed
+(
+CH_USE_MUTEXES
+Ë|| deföed(
+__DOXYGEN__
+)
+
+186 
+	#CH_USE_MUTEXES
+ 
+TRUE
+
+
+	)
+
+197 #i‡!
+deföed
+(
+CH_USE_CONDVARS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+198 
+	#CH_USE_CONDVARS
+ 
+TRUE
+
+
+	)
+
+209 #i‡!
+deföed
+(
+CH_USE_CONDVARS_TIMEOUT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+210 
+	#CH_USE_CONDVARS_TIMEOUT
+ 
+TRUE
+
+
+	)
+
+219 #i‡!
+deföed
+(
+CH_USE_EVENTS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+220 
+	#CH_USE_EVENTS
+ 
+TRUE
+
+
+	)
+
+231 #i‡!
+deföed
+(
+CH_USE_EVENTS_TIMEOUT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+232 
+	#CH_USE_EVENTS_TIMEOUT
+ 
+TRUE
+
+
+	)
+
+242 #i‡!
+deföed
+(
+CH_USE_MESSAGES
+Ë|| deföed(
+__DOXYGEN__
+)
+
+243 
+	#CH_USE_MESSAGES
+ 
+TRUE
+
+
+	)
+
+254 #i‡!
+deföed
+(
+CH_USE_MESSAGES_PRIORITY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+255 
+	#CH_USE_MESSAGES_PRIORITY
+ 
+FALSE
+
+
+	)
+
+266 #i‡!
+deföed
+(
+CH_USE_MAILBOXES
+Ë|| deföed(
+__DOXYGEN__
+)
+
+267 
+	#CH_USE_MAILBOXES
+ 
+TRUE
+
+
+	)
+
+276 #i‡!
+deföed
+(
+CH_USE_QUEUES
+Ë|| deföed(
+__DOXYGEN__
+)
+
+277 
+	#CH_USE_QUEUES
+ 
+TRUE
+
+
+	)
+
+287 #i‡!
+deföed
+(
+CH_USE_MEMCORE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+288 
+	#CH_USE_MEMCORE
+ 
+TRUE
+
+
+	)
+
+301 #i‡!
+deföed
+(
+CH_USE_HEAP
+Ë|| deföed(
+__DOXYGEN__
+)
+
+302 
+	#CH_USE_HEAP
+ 
+TRUE
+
+
+	)
+
+315 #i‡!
+deföed
+(
+CH_USE_MALLOC_HEAP
+Ë|| deföed(
+__DOXYGEN__
+)
+
+316 
+	#CH_USE_MALLOC_HEAP
+ 
+FALSE
+
+
+	)
+
+326 #i‡!
+deföed
+(
+CH_USE_MEMPOOLS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+327 
+	#CH_USE_MEMPOOLS
+ 
+TRUE
+
+
+	)
+
+339 #i‡!
+deföed
+(
+CH_USE_DYNAMIC
+Ë|| deföed(
+__DOXYGEN__
+)
+
+340 
+	#CH_USE_DYNAMIC
+ 
+TRUE
+
+
+	)
+
+359 #i‡!
+deföed
+(
+CH_DBG_SYSTEM_STATE_CHECK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+360 
+	#CH_DBG_SYSTEM_STATE_CHECK
+ 
+FALSE
+
+
+	)
+
+370 #i‡!
+deföed
+(
+CH_DBG_ENABLE_CHECKS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+371 
+	#CH_DBG_ENABLE_CHECKS
+ 
+FALSE
+
+
+	)
+
+382 #i‡!
+deföed
+(
+CH_DBG_ENABLE_ASSERTS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+383 
+	#CH_DBG_ENABLE_ASSERTS
+ 
+FALSE
+
+
+	)
+
+393 #i‡!
+deföed
+(
+CH_DBG_ENABLE_TRACE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+394 
+	#CH_DBG_ENABLE_TRACE
+ 
+FALSE
+
+
+	)
+
+407 #i‡!
+deföed
+(
+CH_DBG_ENABLE_STACK_CHECK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+408 
+	#CH_DBG_ENABLE_STACK_CHECK
+ 
+FALSE
+
+
+	)
+
+419 #i‡!
+deföed
+(
+CH_DBG_FILL_THREADS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+420 
+	#CH_DBG_FILL_THREADS
+ 
+FALSE
+
+
+	)
+
+432 #i‡!
+deföed
+(
+CH_DBG_THREADS_PROFILING
+Ë|| deföed(
+__DOXYGEN__
+)
+
+433 
+	#CH_DBG_THREADS_PROFILING
+ 
+TRUE
+
+
+	)
+
+449 #i‡!
+deföed
+(
+THREAD_EXT_FIELDS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+450 
+	#THREAD_EXT_FIELDS
+ \
+
+	)
+
+461 #i‡!
+deföed
+(
+THREAD_EXT_INIT_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+462 
+	#THREAD_EXT_INIT_HOOK
+(
+ç
+Ë{ \
+
+	)
+
+475 #i‡!
+deföed
+(
+THREAD_EXT_EXIT_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+476 
+	#THREAD_EXT_EXIT_HOOK
+(
+ç
+Ë{ \
+
+	)
+
+485 #i‡!
+deföed
+(
+THREAD_CONTEXT_SWITCH_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+486 
+	#THREAD_CONTEXT_SWITCH_HOOK
+(
+¡p
+, 
+Ÿp
+Ë{ \
+
+	)
+
+495 #i‡!
+deföed
+(
+IDLE_LOOP_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+496 
+	#IDLE_LOOP_HOOK
+(Ë{ \
+
+	)
+
+506 #i‡!
+deföed
+(
+SYSTEM_TICK_EVENT_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+507 
+	#SYSTEM_TICK_EVENT_HOOK
+(Ë{ \
+
+	)
+
+517 #i‡!
+deföed
+(
+SYSTEM_HALT_HOOK
+Ë|| deföed(
+__DOXYGEN__
+)
+
+518 
+	#SYSTEM_HALT_HOOK
+(Ë{ \
+
+	)
+
+531 
+	#CORTEX_USE_FPU
+ 
+FALSE
+
+
+	)
+
+	@halconf.h
+
+28 #i‚de‡
+_HALCONF_H_
+
+
+29 
+	#_HALCONF_H_
+
+
+	)
+
+31 
+	~"mcuc⁄f.h
+"
+
+36 #i‡!
+deföed
+(
+HAL_USE_TM
+Ë|| deföed(
+__DOXYGEN__
+)
+
+37 
+	#HAL_USE_TM
+ 
+FALSE
+
+
+	)
+
+43 #i‡!
+deföed
+(
+HAL_USE_PAL
+Ë|| deföed(
+__DOXYGEN__
+)
+
+44 
+	#HAL_USE_PAL
+ 
+TRUE
+
+
+	)
+
+50 #i‡!
+deföed
+(
+HAL_USE_ADC
+Ë|| deföed(
+__DOXYGEN__
+)
+
+51 
+	#HAL_USE_ADC
+ 
+TRUE
+
+
+	)
+
+57 #i‡!
+deföed
+(
+HAL_USE_CAN
+Ë|| deföed(
+__DOXYGEN__
+)
+
+58 
+	#HAL_USE_CAN
+ 
+FALSE
+
+
+	)
+
+64 #i‡!
+deföed
+(
+HAL_USE_EXT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+65 
+	#HAL_USE_EXT
+ 
+FALSE
+
+
+	)
+
+71 #i‡!
+deföed
+(
+HAL_USE_GPT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+72 
+	#HAL_USE_GPT
+ 
+FALSE
+
+
+	)
+
+78 #i‡!
+deföed
+(
+HAL_USE_I2C
+Ë|| deföed(
+__DOXYGEN__
+)
+
+79 
+	#HAL_USE_I2C
+ 
+FALSE
+
+
+	)
+
+85 #i‡!
+deföed
+(
+HAL_USE_ICU
+Ë|| deföed(
+__DOXYGEN__
+)
+
+86 
+	#HAL_USE_ICU
+ 
+FALSE
+
+
+	)
+
+92 #i‡!
+deföed
+(
+HAL_USE_MAC
+Ë|| deföed(
+__DOXYGEN__
+)
+
+93 
+	#HAL_USE_MAC
+ 
+FALSE
+
+
+	)
+
+99 #i‡!
+deföed
+(
+HAL_USE_MMC_SPI
+Ë|| deföed(
+__DOXYGEN__
+)
+
+100 
+	#HAL_USE_MMC_SPI
+ 
+FALSE
+
+
+	)
+
+106 #i‡!
+deföed
+(
+HAL_USE_PWM
+Ë|| deföed(
+__DOXYGEN__
+)
+
+107 
+	#HAL_USE_PWM
+ 
+TRUE
+
+
+	)
+
+113 #i‡!
+deföed
+(
+HAL_USE_RTC
+Ë|| deföed(
+__DOXYGEN__
+)
+
+114 
+	#HAL_USE_RTC
+ 
+FALSE
+
+
+	)
+
+120 #i‡!
+deföed
+(
+HAL_USE_SDC
+Ë|| deföed(
+__DOXYGEN__
+)
+
+121 
+	#HAL_USE_SDC
+ 
+FALSE
+
+
+	)
+
+127 #i‡!
+deföed
+(
+HAL_USE_SERIAL
+Ë|| deföed(
+__DOXYGEN__
+)
+
+128 
+	#HAL_USE_SERIAL
+ 
+TRUE
+
+
+	)
+
+134 #i‡!
+deföed
+(
+HAL_USE_SERIAL_USB
+Ë|| deföed(
+__DOXYGEN__
+)
+
+135 
+	#HAL_USE_SERIAL_USB
+ 
+FALSE
+
+
+	)
+
+141 #i‡!
+deföed
+(
+HAL_USE_SPI
+Ë|| deföed(
+__DOXYGEN__
+)
+
+142 
+	#HAL_USE_SPI
+ 
+TRUE
+
+
+	)
+
+148 #i‡!
+deföed
+(
+HAL_USE_UART
+Ë|| deföed(
+__DOXYGEN__
+)
+
+149 
+	#HAL_USE_UART
+ 
+FALSE
+
+
+	)
+
+155 #i‡!
+deföed
+(
+HAL_USE_USB
+Ë|| deföed(
+__DOXYGEN__
+)
+
+156 
+	#HAL_USE_USB
+ 
+FALSE
+
+
+	)
+
+167 #i‡!
+deföed
+(
+ADC_USE_WAIT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+168 
+	#ADC_USE_WAIT
+ 
+TRUE
+
+
+	)
+
+175 #i‡!
+deföed
+(
+ADC_USE_MUTUAL_EXCLUSION
+Ë|| deföed(
+__DOXYGEN__
+)
+
+176 
+	#ADC_USE_MUTUAL_EXCLUSION
+ 
+TRUE
+
+
+	)
+
+186 #i‡!
+deföed
+(
+CAN_USE_SLEEP_MODE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+187 
+	#CAN_USE_SLEEP_MODE
+ 
+TRUE
+
+
+	)
+
+197 #i‡!
+deföed
+(
+I2C_USE_MUTUAL_EXCLUSION
+Ë|| deföed(
+__DOXYGEN__
+)
+
+198 
+	#I2C_USE_MUTUAL_EXCLUSION
+ 
+TRUE
+
+
+	)
+
+208 #i‡!
+deföed
+(
+MAC_USE_ZERO_COPY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+209 
+	#MAC_USE_ZERO_COPY
+ 
+FALSE
+
+
+	)
+
+215 #i‡!
+deföed
+(
+MAC_USE_EVENTS
+Ë|| deföed(
+__DOXYGEN__
+)
+
+216 
+	#MAC_USE_EVENTS
+ 
+TRUE
+
+
+	)
+
+231 #i‡!
+deföed
+(
+MMC_NICE_WAITING
+Ë|| deföed(
+__DOXYGEN__
+)
+
+232 
+	#MMC_NICE_WAITING
+ 
+TRUE
+
+
+	)
+
+243 #i‡!
+deföed
+(
+SDC_INIT_RETRY
+Ë|| deföed(
+__DOXYGEN__
+)
+
+244 
+	#SDC_INIT_RETRY
+ 100
+
+	)
+
+252 #i‡!
+deföed
+(
+SDC_MMC_SUPPORT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+253 
+	#SDC_MMC_SUPPORT
+ 
+FALSE
+
+
+	)
+
+262 #i‡!
+deföed
+(
+SDC_NICE_WAITING
+Ë|| deföed(
+__DOXYGEN__
+)
+
+263 
+	#SDC_NICE_WAITING
+ 
+TRUE
+
+
+	)
+
+275 #i‡!
+deföed
+(
+SERIAL_DEFAULT_BITRATE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+276 
+	#SERIAL_DEFAULT_BITRATE
+ 38400
+
+	)
+
+286 #i‡!
+deföed
+(
+SERIAL_BUFFERS_SIZE
+Ë|| deföed(
+__DOXYGEN__
+)
+
+287 
+	#SERIAL_BUFFERS_SIZE
+ 16
+
+	)
+
+298 #i‡!
+deföed
+(
+SPI_USE_WAIT
+Ë|| deföed(
+__DOXYGEN__
+)
+
+299 
+	#SPI_USE_WAIT
+ 
+TRUE
+
+
+	)
+
+306 #i‡!
+deföed
+(
+SPI_USE_MUTUAL_EXCLUSION
+Ë|| deföed(
+__DOXYGEN__
+)
+
+307 
+	#SPI_USE_MUTUAL_EXCLUSION
+ 
+TRUE
+
+
+	)
+
+	@main.c
+
+1 
+	~"ch.h
+"
+
+2 
+	~"hÆ.h
+"
+
+3 
+	~"£rvo.h
+"
+
+5 
+Sîvo
+ 
+	g£rvo1
+ = {
+
+6 
+GPIOB
+,
+
+8 &
+PWMD4
+,
+
+14 
+Sîvo
+ 
+	g£rvo2
+ = {
+
+15 
+GPIOE
+,
+
+17 &
+PWMD4
+,
+
+23 
+	$maö
+() {
+
+24 
+uöt16_t
+ 
+i
+;
+
+26 
+	`hÆInô
+();
+
+27 
+	`chSysInô
+();
+
+29 
+	`£rvoInô
+(&
+£rvo1
+);
+
+30 
+	`£rvoInô
+(&
+£rvo2
+);
+
+32 
+TRUE
+) {
+
+38 
+i
+ = 700; i < 2000; i += 50) {
+
+39 
+	`£rvoSëVÆue
+(&
+£rvo1
+, 
+i
+);
+
+40 
+	`£rvoSëVÆue
+(&
+£rvo2
+, 
+i
+);
+
+41 
+	`chThdSÀïMûli£c⁄ds
+(50);
+
+43 
+i
+ = 2000; i > 700; i -= 50) {
+
+44 
+	`£rvoSëVÆue
+(&
+£rvo1
+, 
+i
+);
+
+45 
+	`£rvoSëVÆue
+(&
+£rvo2
+, 
+i
+);
+
+46 
+	`chThdSÀïMûli£c⁄ds
+(50);
+
+51 
+	}
+}
+
+	@mcuconf.h
+
+31 
+	#STM32F4xx_MCUCONF
+
+
+	)
+
+36 
+	#STM32_NO_INIT
+ 
+FALSE
+
+
+	)
+
+37 
+	#STM32_HSI_ENABLED
+ 
+TRUE
+
+
+	)
+
+38 
+	#STM32_LSI_ENABLED
+ 
+TRUE
+
+
+	)
+
+39 
+	#STM32_HSE_ENABLED
+ 
+TRUE
+
+
+	)
+
+40 
+	#STM32_LSE_ENABLED
+ 
+FALSE
+
+
+	)
+
+41 
+	#STM32_CLOCK48_REQUIRED
+ 
+TRUE
+
+
+	)
+
+42 
+	#STM32_SW
+ 
+STM32_SW_PLL
+
+
+	)
+
+43 
+	#STM32_PLLSRC
+ 
+STM32_PLLSRC_HSE
+
+
+	)
+
+44 
+	#STM32_PLLM_VALUE
+ 8
+
+	)
+
+45 
+	#STM32_PLLN_VALUE
+ 336
+
+	)
+
+46 
+	#STM32_PLLP_VALUE
+ 2
+
+	)
+
+47 
+	#STM32_PLLQ_VALUE
+ 7
+
+	)
+
+48 
+	#STM32_HPRE
+ 
+STM32_HPRE_DIV1
+
+
+	)
+
+49 
+	#STM32_PPRE1
+ 
+STM32_PPRE1_DIV4
+
+
+	)
+
+50 
+	#STM32_PPRE2
+ 
+STM32_PPRE2_DIV2
+
+
+	)
+
+51 
+	#STM32_RTCSEL
+ 
+STM32_RTCSEL_LSI
+
+
+	)
+
+52 
+	#STM32_RTCPRE_VALUE
+ 8
+
+	)
+
+53 
+	#STM32_MCO1SEL
+ 
+STM32_MCO1SEL_HSI
+
+
+	)
+
+54 
+	#STM32_MCO1PRE
+ 
+STM32_MCO1PRE_DIV1
+
+
+	)
+
+55 
+	#STM32_MCO2SEL
+ 
+STM32_MCO2SEL_SYSCLK
+
+
+	)
+
+56 
+	#STM32_MCO2PRE
+ 
+STM32_MCO2PRE_DIV5
+
+
+	)
+
+57 
+	#STM32_I2SSRC
+ 
+STM32_I2SSRC_CKIN
+
+
+	)
+
+58 
+	#STM32_PLLI2SN_VALUE
+ 192
+
+	)
+
+59 
+	#STM32_PLLI2SR_VALUE
+ 5
+
+	)
+
+60 
+	#STM32_PVD_ENABLE
+ 
+FALSE
+
+
+	)
+
+61 
+	#STM32_PLS
+ 
+STM32_PLS_LEV0
+
+
+	)
+
+62 
+	#STM32_BKPRAM_ENABLE
+ 
+FALSE
+
+
+	)
+
+67 
+	#STM32_ADC_ADCPRE
+ 
+ADC_CCR_ADCPRE_DIV4
+
+
+	)
+
+68 
+	#STM32_ADC_USE_ADC1
+ 
+TRUE
+
+
+	)
+
+69 
+	#STM32_ADC_USE_ADC2
+ 
+FALSE
+
+
+	)
+
+70 
+	#STM32_ADC_USE_ADC3
+ 
+FALSE
+
+
+	)
+
+71 
+	#STM32_ADC_ADC1_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 4)
+
+	)
+
+72 
+	#STM32_ADC_ADC2_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 2)
+
+	)
+
+73 
+	#STM32_ADC_ADC3_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 1)
+
+	)
+
+74 
+	#STM32_ADC_ADC1_DMA_PRIORITY
+ 2
+
+	)
+
+75 
+	#STM32_ADC_ADC2_DMA_PRIORITY
+ 2
+
+	)
+
+76 
+	#STM32_ADC_ADC3_DMA_PRIORITY
+ 2
+
+	)
+
+77 
+	#STM32_ADC_IRQ_PRIORITY
+ 6
+
+	)
+
+78 
+	#STM32_ADC_ADC1_DMA_IRQ_PRIORITY
+ 6
+
+	)
+
+79 
+	#STM32_ADC_ADC2_DMA_IRQ_PRIORITY
+ 6
+
+	)
+
+80 
+	#STM32_ADC_ADC3_DMA_IRQ_PRIORITY
+ 6
+
+	)
+
+85 
+	#STM32_CAN_USE_CAN1
+ 
+FALSE
+
+
+	)
+
+86 
+	#STM32_CAN_USE_CAN2
+ 
+FALSE
+
+
+	)
+
+87 
+	#STM32_CAN_CAN1_IRQ_PRIORITY
+ 11
+
+	)
+
+88 
+	#STM32_CAN_CAN2_IRQ_PRIORITY
+ 11
+
+	)
+
+93 
+	#STM32_EXT_EXTI0_IRQ_PRIORITY
+ 6
+
+	)
+
+94 
+	#STM32_EXT_EXTI1_IRQ_PRIORITY
+ 6
+
+	)
+
+95 
+	#STM32_EXT_EXTI2_IRQ_PRIORITY
+ 6
+
+	)
+
+96 
+	#STM32_EXT_EXTI3_IRQ_PRIORITY
+ 6
+
+	)
+
+97 
+	#STM32_EXT_EXTI4_IRQ_PRIORITY
+ 6
+
+	)
+
+98 
+	#STM32_EXT_EXTI5_9_IRQ_PRIORITY
+ 6
+
+	)
+
+99 
+	#STM32_EXT_EXTI10_15_IRQ_PRIORITY
+ 6
+
+	)
+
+100 
+	#STM32_EXT_EXTI16_IRQ_PRIORITY
+ 6
+
+	)
+
+101 
+	#STM32_EXT_EXTI17_IRQ_PRIORITY
+ 15
+
+	)
+
+102 
+	#STM32_EXT_EXTI18_IRQ_PRIORITY
+ 6
+
+	)
+
+103 
+	#STM32_EXT_EXTI19_IRQ_PRIORITY
+ 6
+
+	)
+
+104 
+	#STM32_EXT_EXTI20_IRQ_PRIORITY
+ 6
+
+	)
+
+105 
+	#STM32_EXT_EXTI21_IRQ_PRIORITY
+ 15
+
+	)
+
+106 
+	#STM32_EXT_EXTI22_IRQ_PRIORITY
+ 15
+
+	)
+
+111 
+	#STM32_GPT_USE_TIM1
+ 
+FALSE
+
+
+	)
+
+112 
+	#STM32_GPT_USE_TIM2
+ 
+FALSE
+
+
+	)
+
+113 
+	#STM32_GPT_USE_TIM3
+ 
+FALSE
+
+
+	)
+
+114 
+	#STM32_GPT_USE_TIM4
+ 
+FALSE
+
+
+	)
+
+115 
+	#STM32_GPT_USE_TIM5
+ 
+FALSE
+
+
+	)
+
+116 
+	#STM32_GPT_USE_TIM6
+ 
+FALSE
+
+
+	)
+
+117 
+	#STM32_GPT_USE_TIM7
+ 
+FALSE
+
+
+	)
+
+118 
+	#STM32_GPT_USE_TIM8
+ 
+FALSE
+
+
+	)
+
+119 
+	#STM32_GPT_USE_TIM9
+ 
+FALSE
+
+
+	)
+
+120 
+	#STM32_GPT_USE_TIM11
+ 
+FALSE
+
+
+	)
+
+121 
+	#STM32_GPT_USE_TIM12
+ 
+FALSE
+
+
+	)
+
+122 
+	#STM32_GPT_USE_TIM14
+ 
+FALSE
+
+
+	)
+
+123 
+	#STM32_GPT_TIM1_IRQ_PRIORITY
+ 7
+
+	)
+
+124 
+	#STM32_GPT_TIM2_IRQ_PRIORITY
+ 7
+
+	)
+
+125 
+	#STM32_GPT_TIM3_IRQ_PRIORITY
+ 7
+
+	)
+
+126 
+	#STM32_GPT_TIM4_IRQ_PRIORITY
+ 7
+
+	)
+
+127 
+	#STM32_GPT_TIM5_IRQ_PRIORITY
+ 7
+
+	)
+
+128 
+	#STM32_GPT_TIM6_IRQ_PRIORITY
+ 7
+
+	)
+
+129 
+	#STM32_GPT_TIM7_IRQ_PRIORITY
+ 7
+
+	)
+
+130 
+	#STM32_GPT_TIM8_IRQ_PRIORITY
+ 7
+
+	)
+
+131 
+	#STM32_GPT_TIM9_IRQ_PRIORITY
+ 7
+
+	)
+
+132 
+	#STM32_GPT_TIM11_IRQ_PRIORITY
+ 7
+
+	)
+
+133 
+	#STM32_GPT_TIM12_IRQ_PRIORITY
+ 7
+
+	)
+
+134 
+	#STM32_GPT_TIM14_IRQ_PRIORITY
+ 7
+
+	)
+
+139 
+	#STM32_I2C_USE_I2C1
+ 
+FALSE
+
+
+	)
+
+140 
+	#STM32_I2C_USE_I2C2
+ 
+FALSE
+
+
+	)
+
+141 
+	#STM32_I2C_USE_I2C3
+ 
+FALSE
+
+
+	)
+
+142 
+	#STM32_I2C_I2C1_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 0)
+
+	)
+
+143 
+	#STM32_I2C_I2C1_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 6)
+
+	)
+
+144 
+	#STM32_I2C_I2C2_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 2)
+
+	)
+
+145 
+	#STM32_I2C_I2C2_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 7)
+
+	)
+
+146 
+	#STM32_I2C_I2C3_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 2)
+
+	)
+
+147 
+	#STM32_I2C_I2C3_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 4)
+
+	)
+
+148 
+	#STM32_I2C_I2C1_IRQ_PRIORITY
+ 5
+
+	)
+
+149 
+	#STM32_I2C_I2C2_IRQ_PRIORITY
+ 5
+
+	)
+
+150 
+	#STM32_I2C_I2C3_IRQ_PRIORITY
+ 5
+
+	)
+
+151 
+	#STM32_I2C_I2C1_DMA_PRIORITY
+ 3
+
+	)
+
+152 
+	#STM32_I2C_I2C2_DMA_PRIORITY
+ 3
+
+	)
+
+153 
+	#STM32_I2C_I2C3_DMA_PRIORITY
+ 3
+
+	)
+
+154 
+	#STM32_I2C_I2C1_DMA_ERROR_HOOK
+(Ë
+	`chSysHÆt
+()
+
+	)
+
+155 
+	#STM32_I2C_I2C2_DMA_ERROR_HOOK
+(Ë
+	`chSysHÆt
+()
+
+	)
+
+156 
+	#STM32_I2C_I2C3_DMA_ERROR_HOOK
+(Ë
+	`chSysHÆt
+()
+
+	)
+
+161 
+	#STM32_ICU_USE_TIM1
+ 
+FALSE
+
+
+	)
+
+162 
+	#STM32_ICU_USE_TIM2
+ 
+FALSE
+
+
+	)
+
+163 
+	#STM32_ICU_USE_TIM3
+ 
+FALSE
+
+
+	)
+
+164 
+	#STM32_ICU_USE_TIM4
+ 
+FALSE
+
+
+	)
+
+165 
+	#STM32_ICU_USE_TIM5
+ 
+FALSE
+
+
+	)
+
+166 
+	#STM32_ICU_USE_TIM8
+ 
+FALSE
+
+
+	)
+
+167 
+	#STM32_ICU_USE_TIM9
+ 
+FALSE
+
+
+	)
+
+168 
+	#STM32_ICU_TIM1_IRQ_PRIORITY
+ 7
+
+	)
+
+169 
+	#STM32_ICU_TIM2_IRQ_PRIORITY
+ 7
+
+	)
+
+170 
+	#STM32_ICU_TIM3_IRQ_PRIORITY
+ 7
+
+	)
+
+171 
+	#STM32_ICU_TIM4_IRQ_PRIORITY
+ 7
+
+	)
+
+172 
+	#STM32_ICU_TIM5_IRQ_PRIORITY
+ 7
+
+	)
+
+173 
+	#STM32_ICU_TIM8_IRQ_PRIORITY
+ 7
+
+	)
+
+174 
+	#STM32_ICU_TIM9_IRQ_PRIORITY
+ 7
+
+	)
+
+179 
+	#STM32_MAC_TRANSMIT_BUFFERS
+ 2
+
+	)
+
+180 
+	#STM32_MAC_RECEIVE_BUFFERS
+ 4
+
+	)
+
+181 
+	#STM32_MAC_BUFFERS_SIZE
+ 1522
+
+	)
+
+182 
+	#STM32_MAC_PHY_TIMEOUT
+ 100
+
+	)
+
+183 
+	#STM32_MAC_ETH1_CHANGE_PHY_STATE
+ 
+TRUE
+
+
+	)
+
+184 
+	#STM32_MAC_ETH1_IRQ_PRIORITY
+ 13
+
+	)
+
+185 
+	#STM32_MAC_IP_CHECKSUM_OFFLOAD
+ 0
+
+	)
+
+190 
+	#STM32_PWM_USE_ADVANCED
+ 
+FALSE
+
+
+	)
+
+191 
+	#STM32_PWM_USE_TIM1
+ 
+FALSE
+
+
+	)
+
+192 
+	#STM32_PWM_USE_TIM2
+ 
+FALSE
+
+
+	)
+
+193 
+	#STM32_PWM_USE_TIM3
+ 
+FALSE
+
+
+	)
+
+194 
+	#STM32_PWM_USE_TIM4
+ 
+TRUE
+
+
+	)
+
+195 
+	#STM32_PWM_USE_TIM5
+ 
+FALSE
+
+
+	)
+
+196 
+	#STM32_PWM_USE_TIM8
+ 
+FALSE
+
+
+	)
+
+197 
+	#STM32_PWM_USE_TIM9
+ 
+FALSE
+
+
+	)
+
+198 
+	#STM32_PWM_TIM1_IRQ_PRIORITY
+ 7
+
+	)
+
+199 
+	#STM32_PWM_TIM2_IRQ_PRIORITY
+ 7
+
+	)
+
+200 
+	#STM32_PWM_TIM3_IRQ_PRIORITY
+ 7
+
+	)
+
+201 
+	#STM32_PWM_TIM4_IRQ_PRIORITY
+ 7
+
+	)
+
+202 
+	#STM32_PWM_TIM5_IRQ_PRIORITY
+ 7
+
+	)
+
+203 
+	#STM32_PWM_TIM8_IRQ_PRIORITY
+ 7
+
+	)
+
+204 
+	#STM32_PWM_TIM9_IRQ_PRIORITY
+ 7
+
+	)
+
+209 
+	#STM32_SERIAL_USE_USART1
+ 
+FALSE
+
+
+	)
+
+210 
+	#STM32_SERIAL_USE_USART2
+ 
+TRUE
+
+
+	)
+
+211 
+	#STM32_SERIAL_USE_USART3
+ 
+FALSE
+
+
+	)
+
+212 
+	#STM32_SERIAL_USE_UART4
+ 
+FALSE
+
+
+	)
+
+213 
+	#STM32_SERIAL_USE_UART5
+ 
+FALSE
+
+
+	)
+
+214 
+	#STM32_SERIAL_USE_USART6
+ 
+FALSE
+
+
+	)
+
+215 
+	#STM32_SERIAL_USART1_PRIORITY
+ 12
+
+	)
+
+216 
+	#STM32_SERIAL_USART2_PRIORITY
+ 12
+
+	)
+
+217 
+	#STM32_SERIAL_USART3_PRIORITY
+ 12
+
+	)
+
+218 
+	#STM32_SERIAL_UART4_PRIORITY
+ 12
+
+	)
+
+219 
+	#STM32_SERIAL_UART5_PRIORITY
+ 12
+
+	)
+
+220 
+	#STM32_SERIAL_USART6_PRIORITY
+ 12
+
+	)
+
+225 
+	#STM32_SPI_USE_SPI1
+ 
+FALSE
+
+
+	)
+
+226 
+	#STM32_SPI_USE_SPI2
+ 
+TRUE
+
+
+	)
+
+227 
+	#STM32_SPI_USE_SPI3
+ 
+FALSE
+
+
+	)
+
+228 
+	#STM32_SPI_SPI1_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 0)
+
+	)
+
+229 
+	#STM32_SPI_SPI1_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 3)
+
+	)
+
+230 
+	#STM32_SPI_SPI2_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 3)
+
+	)
+
+231 
+	#STM32_SPI_SPI2_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 4)
+
+	)
+
+232 
+	#STM32_SPI_SPI3_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 0)
+
+	)
+
+233 
+	#STM32_SPI_SPI3_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 7)
+
+	)
+
+234 
+	#STM32_SPI_SPI1_DMA_PRIORITY
+ 1
+
+	)
+
+235 
+	#STM32_SPI_SPI2_DMA_PRIORITY
+ 1
+
+	)
+
+236 
+	#STM32_SPI_SPI3_DMA_PRIORITY
+ 1
+
+	)
+
+237 
+	#STM32_SPI_SPI1_IRQ_PRIORITY
+ 10
+
+	)
+
+238 
+	#STM32_SPI_SPI2_IRQ_PRIORITY
+ 10
+
+	)
+
+239 
+	#STM32_SPI_SPI3_IRQ_PRIORITY
+ 10
+
+	)
+
+240 
+	#STM32_SPI_DMA_ERROR_HOOK
+(
+•ù
+Ë
+	`chSysHÆt
+()
+
+	)
+
+245 
+	#STM32_UART_USE_USART1
+ 
+FALSE
+
+
+	)
+
+246 
+	#STM32_UART_USE_USART2
+ 
+FALSE
+
+
+	)
+
+247 
+	#STM32_UART_USE_USART3
+ 
+FALSE
+
+
+	)
+
+248 
+	#STM32_UART_USE_UART4
+ 
+FALSE
+
+
+	)
+
+249 
+	#STM32_UART_USE_UART5
+ 
+FALSE
+
+
+	)
+
+250 
+	#STM32_UART_USE_USART6
+ 
+FALSE
+
+
+	)
+
+251 
+	#STM32_UART_USART1_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 5)
+
+	)
+
+252 
+	#STM32_UART_USART1_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 7)
+
+	)
+
+253 
+	#STM32_UART_USART2_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 5)
+
+	)
+
+254 
+	#STM32_UART_USART2_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 6)
+
+	)
+
+255 
+	#STM32_UART_USART3_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 1)
+
+	)
+
+256 
+	#STM32_UART_USART3_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 3)
+
+	)
+
+257 
+	#STM32_UART_UART4_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 2)
+
+	)
+
+258 
+	#STM32_UART_UART4_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 4)
+
+	)
+
+259 
+	#STM32_UART_UART5_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 0)
+
+	)
+
+260 
+	#STM32_UART_UART5_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(1, 7)
+
+	)
+
+261 
+	#STM32_UART_USART6_RX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 2)
+
+	)
+
+262 
+	#STM32_UART_USART6_TX_DMA_STREAM
+ 
+	`STM32_DMA_STREAM_ID
+(2, 7)
+
+	)
+
+263 
+	#STM32_UART_USART1_IRQ_PRIORITY
+ 12
+
+	)
+
+264 
+	#STM32_UART_USART2_IRQ_PRIORITY
+ 12
+
+	)
+
+265 
+	#STM32_UART_USART3_IRQ_PRIORITY
+ 12
+
+	)
+
+266 
+	#STM32_UART_UART4_IRQ_PRIORITY
+ 12
+
+	)
+
+267 
+	#STM32_UART_UART5_IRQ_PRIORITY
+ 12
+
+	)
+
+268 
+	#STM32_UART_USART6_IRQ_PRIORITY
+ 12
+
+	)
+
+269 
+	#STM32_UART_USART1_DMA_PRIORITY
+ 0
+
+	)
+
+270 
+	#STM32_UART_USART2_DMA_PRIORITY
+ 0
+
+	)
+
+271 
+	#STM32_UART_USART3_DMA_PRIORITY
+ 0
+
+	)
+
+272 
+	#STM32_UART_UART4_DMA_PRIORITY
+ 0
+
+	)
+
+273 
+	#STM32_UART_UART5_DMA_PRIORITY
+ 0
+
+	)
+
+274 
+	#STM32_UART_USART6_DMA_PRIORITY
+ 0
+
+	)
+
+275 
+	#STM32_UART_DMA_ERROR_HOOK
+(
+u¨ç
+Ë
+	`chSysHÆt
+()
+
+	)
+
+280 
+	#STM32_USB_USE_OTG1
+ 
+FALSE
+
+
+	)
+
+281 
+	#STM32_USB_USE_OTG2
+ 
+FALSE
+
+
+	)
+
+282 
+	#STM32_USB_OTG1_IRQ_PRIORITY
+ 14
+
+	)
+
+283 
+	#STM32_USB_OTG2_IRQ_PRIORITY
+ 14
+
+	)
+
+284 
+	#STM32_USB_OTG1_RX_FIFO_SIZE
+ 512
+
+	)
+
+285 
+	#STM32_USB_OTG2_RX_FIFO_SIZE
+ 1024
+
+	)
+
+286 
+	#STM32_USB_OTG_THREAD_PRIO
+ 
+LOWPRIO
+
+
+	)
+
+287 
+	#STM32_USB_OTG_THREAD_STACK_SIZE
+ 128
+
+	)
+
+288 
+	#STM32_USB_OTGFIFO_FILL_BASEPRI
+ 0
+
+	)
+
+	@servo.c
+
+9 
+	~"£rvo.h
+"
+
+11 
+PWMC⁄fig
+ 
+	gpwmcfg
+ = {
+
+14 
+NULL
+,
+
+15 
+NULL
+,
+
+19 
+	$£rvoInô
+(
+Sîvo
+ *
+£rvo
+) {
+
+21 
+PWMCh™√lC⁄fig
+ 
+chcfg
+ = { 
+PWM_OUTPUT_ACTIVE_HIGH
+, 
+NULL
+ };
+
+22 
+pwmcfg
+.
+ch™√ls
+[
+£rvo
+->
+pwm_ch™√l
+] = 
+chcfg
+;
+
+26 
+	`∑lSëPadMode
+(
+£rvo
+->
+p‹t
+, sîvo->
+pö
+, 
+PAL_MODE_STM32_ALTERNATE_PUSHPULL
+);
+
+32 
+	`pwmSèπ
+(
+£rvo
+->
+pwm_drivî
+, &
+pwmcfg
+);
+
+33 
+	}
+}
+
+35 
+	$£rvoSëVÆue
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+) {
+
+37 if(
+vÆue
+ > 
+£rvo
+->
+max
+)
+
+38 
+vÆue
+ = 
+£rvo
+->
+max
+;
+
+39 if(
+vÆue
+ < 
+£rvo
+->
+mö
+)
+
+40 
+vÆue
+ = 
+£rvo
+->
+mö
+;
+
+42 
+	`pwmE«bÀCh™√l
+(
+£rvo
+->
+pwm_drivî
+, sîvo->
+pwm_ch™√l
+, (
+pwm˙t_t
+)
+vÆue
+);
+
+43 
+	}
+}
+
+45 
+	$£rvoSëMax
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+) {
+
+46 
+£rvo
+->
+max
+ = 
+vÆue
+;
+
+47 
+	}
+}
+
+49 
+	$£rvoSëMö
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+) {
+
+50 
+£rvo
+->
+mö
+ = 
+vÆue
+;
+
+51 
+	}
+}
+
+53 
+uöt16_t
+ 
+	$£rvoGëMax
+(
+Sîvo
+ *
+£rvo
+) {
+
+54  (
+£rvo
+->
+max
+);
+
+55 
+	}
+}
+
+57 
+uöt16_t
+ 
+	$£rvoGëMö
+(
+Sîvo
+ *
+£rvo
+) {
+
+58  (
+£rvo
+->
+mö
+);
+
+59 
+	}
+}
+
+	@servo.h
+
+9 
+	~"ch.h
+"
+
+10 
+	~"hÆ.h
+"
+
+12 
+	sSîvo_t
+ {
+
+13 
+i›‹tid_t
+ 
+	mp‹t
+;
+
+14 
+i›‹tmask_t
+ 
+	mpö
+;
+
+15 
+PWMDrivî
+ *
+	mpwm_drivî
+;
+
+16 
+pwmch™√l_t
+ 
+	mpwm_ch™√l
+;
+
+17 
+uöt16_t
+ 
+	mmö
+;
+
+18 
+uöt16_t
+ 
+	mmax
+;
+
+19 } 
+	tSîvo
+;
+
+21 
+£rvoInô
+(
+Sîvo
+ *
+£rvo
+);
+
+22 
+£rvoSëMö
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+);
+
+23 
+£rvoSëMax
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+);
+
+24 
+£rvoSëVÆue
+(
+Sîvo
+ *
+£rvo
+, 
+uöt16_t
+ 
+vÆue
+);
+
+25 
+uöt16_t
+ 
+£rvoGëMö
+(
+Sîvo
+ *
+£rvo
+);
+
+26 
+uöt16_t
+ 
+£rvoGëMax
+(
+Sîvo
+ *
+£rvo
+);
+
+	@
+1
+.
+1
+/usr/include
+6
+52
+chconf.h
+halconf.h
+main.c
+mcuconf.h
+servo.c
+servo.h
