@@ -1,0 +1,12 @@
+INSTRUCTIONS
+
+Add toolchain paths:
+
+alias psas_stm="export PATH=$PATH:/opt/psas/openocd/bin:/opt/psas/x-tools/stm32f407/arm-psas-eabi/bin:/opt/eclipse/"
+
+In this directory, modify the duration of the blinking LED pauses in main.c. 
+
+Then:
+
+make
+st-flash write build/ch.bin 0x08000000.

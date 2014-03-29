@@ -1,4 +1,5 @@
-#include "ch.h"
+//
+//#include "ch.h"
 #include "hal.h"
 
 static PWMConfig pwmcfg = {
@@ -20,8 +21,9 @@ int main(void) {
   chSysInit();
 
   palSetPadMode(GPIOD, 15, PAL_MODE_ALTERNATE(2));
+  palSetPadMode(GPIOB, 9, PAL_MODE_ALTERNATE(2));
   pwmStart(&PWMD4, &pwmcfg);
-  pwmEnableChannel(&PWMD4, 3, 50000);
+  pwmEnableChannel(&PWMD4, 3, 10000);
 
   while (TRUE) {
     chThdSleepMilliseconds(5000);

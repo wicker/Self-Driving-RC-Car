@@ -1,7 +1,6 @@
 // Servo control
 //
 // Servo on pin PB8 uses TIM4 channel 3 on alternate function 2
-// Servo on pin PB9 uses TIM4 channel 4 on alternate function 2
 // TIM4 supports PWM driving.
 // PWMD4 is a HAL-defined driver associated with TIM4.
  
@@ -32,7 +31,7 @@ int main(void)
   chSysInit();
   
   // sets alternate mode 2 which is TIM4 
-  palSetPadMode(GPIOD, 14, PAL_MODE_ALTERNATE(2));
+  palSetPadMode(GPIOB, 8, PAL_MODE_ALTERNATE(2));
    
   pwmStart(&PWMD4, &pwmcfg);
  
